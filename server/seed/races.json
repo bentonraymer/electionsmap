@@ -1,0 +1,4932 @@
+{
+ "generatedAt": "2026-10-26T18:07:39.819Z",
+ "senateAggregate": 87528,
+ "houseAggregate": 87524,
+ "races": [
+  {
+   "id": 87582,
+   "title": "Oklahoma Governor",
+   "short": "OK GOV",
+   "office": "Governor",
+   "category": "governor",
+   "order": -1,
+   "state": "ok",
+   "priorParty": "R",
+   "key": true,
+   "oklahoma": true
+  },
+  {
+   "id": 86908,
+   "title": "Alabama Governor",
+   "short": "AL GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "al",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 148898,
+   "title": "Alaska Governor",
+   "short": "AK GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ak",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 86938,
+   "title": "Arkansas Governor",
+   "short": "AR GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ar",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 86952,
+   "title": "California Governor",
+   "short": "CA GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ca",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87018,
+   "title": "Colorado Governor",
+   "short": "CO GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "co",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87026,
+   "title": "Connecticut Governor",
+   "short": "CT GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ct",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87069,
+   "title": "Florida Governor",
+   "short": "FL GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "fl",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87088,
+   "title": "Georgia Governor",
+   "short": "GA GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ga",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87100,
+   "title": "Hawaii Governor",
+   "short": "HI GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "hi",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87106,
+   "title": "Idaho Governor",
+   "short": "ID GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "id",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87130,
+   "title": "Illinois Governor",
+   "short": "IL GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "il",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87152,
+   "title": "Iowa Governor",
+   "short": "IA GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ia",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87163,
+   "title": "Kansas Governor",
+   "short": "KS GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ks",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87189,
+   "title": "Maine Governor",
+   "short": "ME GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "me",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87198,
+   "title": "Maryland Governor",
+   "short": "MD GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "md",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87276,
+   "title": "Massachusetts Governor",
+   "short": "MA GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ma",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87215,
+   "title": "Michigan Governor",
+   "short": "MI GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "mi",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87230,
+   "title": "Minnesota Governor",
+   "short": "MN GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "mn",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87255,
+   "title": "Nebraska Governor",
+   "short": "NE GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ne",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87260,
+   "title": "Nevada Governor",
+   "short": "NV GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "nv",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87284,
+   "title": "New Hampshire Governor",
+   "short": "NH GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "nh",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87289,
+   "title": "New Mexico Governor",
+   "short": "NM GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "nm",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87329,
+   "title": "New York Governor",
+   "short": "NY GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ny",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87365,
+   "title": "Ohio Governor",
+   "short": "OH GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "oh",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87375,
+   "title": "Oregon Governor",
+   "short": "OR GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "or",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87393,
+   "title": "Pennsylvania Governor",
+   "short": "PA GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "pa",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87397,
+   "title": "Rhode Island Governor",
+   "short": "RI GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "ri",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87410,
+   "title": "South Carolina Governor",
+   "short": "SC GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "sc",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87447,
+   "title": "South Dakota Governor",
+   "short": "SD GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "sd",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87476,
+   "title": "Tennessee Governor",
+   "short": "TN GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "tn",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 55857,
+   "title": "Texas Governor",
+   "short": "TX GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "tx",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87503,
+   "title": "Vermont Governor",
+   "short": "VT GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "vt",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87491,
+   "title": "Wisconsin Governor",
+   "short": "WI GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "wi",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87497,
+   "title": "Wyoming Governor",
+   "short": "WY GOV",
+   "office": "Governor",
+   "category": "governor",
+   "state": "wy",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 86900,
+   "title": "Alabama District 1",
+   "short": "AL-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-01"
+  },
+  {
+   "id": 86901,
+   "title": "Alabama District 2",
+   "short": "AL-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-02"
+  },
+  {
+   "id": 86902,
+   "title": "Alabama District 3",
+   "short": "AL-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-03"
+  },
+  {
+   "id": 86903,
+   "title": "Alabama District 4",
+   "short": "AL-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-04"
+  },
+  {
+   "id": 86904,
+   "title": "Alabama District 5",
+   "short": "AL-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-05"
+  },
+  {
+   "id": 86905,
+   "title": "Alabama District 6",
+   "short": "AL-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-06"
+  },
+  {
+   "id": 86906,
+   "title": "Alabama District 7",
+   "short": "AL-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "al",
+   "district": "al-07"
+  },
+  {
+   "id": 86915,
+   "title": "Alaska At-Large",
+   "short": "AK-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ak",
+   "district": "ak-al",
+   "priorParty": "R"
+  },
+  {
+   "id": 86917,
+   "title": "Arizona District 1",
+   "short": "AZ-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-01",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 86918,
+   "title": "Arizona District 2",
+   "short": "AZ-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-02"
+  },
+  {
+   "id": 86919,
+   "title": "Arizona District 3",
+   "short": "AZ-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-03"
+  },
+  {
+   "id": 86920,
+   "title": "Arizona District 4",
+   "short": "AZ-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-04"
+  },
+  {
+   "id": 86921,
+   "title": "Arizona District 5",
+   "short": "AZ-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-05"
+  },
+  {
+   "id": 86922,
+   "title": "Arizona District 6",
+   "short": "AZ-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-06",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 86923,
+   "title": "Arizona District 7",
+   "short": "AZ-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-07"
+  },
+  {
+   "id": 86924,
+   "title": "Arizona District 8",
+   "short": "AZ-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-08"
+  },
+  {
+   "id": 86925,
+   "title": "Arizona District 9",
+   "short": "AZ-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "az",
+   "district": "az-09"
+  },
+  {
+   "id": 86945,
+   "title": "Arkansas District 1",
+   "short": "AR-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ar",
+   "district": "ar-01"
+  },
+  {
+   "id": 86946,
+   "title": "Arkansas District 2",
+   "short": "AR-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ar",
+   "district": "ar-02"
+  },
+  {
+   "id": 86947,
+   "title": "Arkansas District 3",
+   "short": "AR-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ar",
+   "district": "ar-03"
+  },
+  {
+   "id": 86948,
+   "title": "Arkansas District 4",
+   "short": "AR-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ar",
+   "district": "ar-04"
+  },
+  {
+   "id": 86968,
+   "title": "California District 1",
+   "short": "CA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-01"
+  },
+  {
+   "id": 86958,
+   "title": "California District 10",
+   "short": "CA-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-10"
+  },
+  {
+   "id": 86959,
+   "title": "California District 11",
+   "short": "CA-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-11"
+  },
+  {
+   "id": 86960,
+   "title": "California District 12",
+   "short": "CA-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-12"
+  },
+  {
+   "id": 86961,
+   "title": "California District 13",
+   "short": "CA-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-13",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 86962,
+   "title": "California District 14",
+   "short": "CA-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-14"
+  },
+  {
+   "id": 86963,
+   "title": "California District 15",
+   "short": "CA-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-15"
+  },
+  {
+   "id": 86964,
+   "title": "California District 16",
+   "short": "CA-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-16"
+  },
+  {
+   "id": 86965,
+   "title": "California District 17",
+   "short": "CA-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-17"
+  },
+  {
+   "id": 86966,
+   "title": "California District 18",
+   "short": "CA-18",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-18"
+  },
+  {
+   "id": 86967,
+   "title": "California District 19",
+   "short": "CA-19",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-19"
+  },
+  {
+   "id": 86979,
+   "title": "California District 2",
+   "short": "CA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-02"
+  },
+  {
+   "id": 86969,
+   "title": "California District 20",
+   "short": "CA-20",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-20"
+  },
+  {
+   "id": 86970,
+   "title": "California District 21",
+   "short": "CA-21",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-21"
+  },
+  {
+   "id": 86971,
+   "title": "California District 22",
+   "short": "CA-22",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-22",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 86972,
+   "title": "California District 23",
+   "short": "CA-23",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-23"
+  },
+  {
+   "id": 86973,
+   "title": "California District 24",
+   "short": "CA-24",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-24"
+  },
+  {
+   "id": 86974,
+   "title": "California District 25",
+   "short": "CA-25",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-25"
+  },
+  {
+   "id": 86975,
+   "title": "California District 26",
+   "short": "CA-26",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-26"
+  },
+  {
+   "id": 86976,
+   "title": "California District 27",
+   "short": "CA-27",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-27"
+  },
+  {
+   "id": 86977,
+   "title": "California District 28",
+   "short": "CA-28",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-28"
+  },
+  {
+   "id": 86978,
+   "title": "California District 29",
+   "short": "CA-29",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-29"
+  },
+  {
+   "id": 86990,
+   "title": "California District 3",
+   "short": "CA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-03"
+  },
+  {
+   "id": 86980,
+   "title": "California District 30",
+   "short": "CA-30",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-30"
+  },
+  {
+   "id": 86981,
+   "title": "California District 31",
+   "short": "CA-31",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-31"
+  },
+  {
+   "id": 86982,
+   "title": "California District 32",
+   "short": "CA-32",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-32"
+  },
+  {
+   "id": 86983,
+   "title": "California District 33",
+   "short": "CA-33",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-33"
+  },
+  {
+   "id": 86984,
+   "title": "California District 34",
+   "short": "CA-34",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-34"
+  },
+  {
+   "id": 86985,
+   "title": "California District 35",
+   "short": "CA-35",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-35"
+  },
+  {
+   "id": 86986,
+   "title": "California District 36",
+   "short": "CA-36",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-36"
+  },
+  {
+   "id": 86987,
+   "title": "California District 37",
+   "short": "CA-37",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-37"
+  },
+  {
+   "id": 86988,
+   "title": "California District 38",
+   "short": "CA-38",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-38"
+  },
+  {
+   "id": 86989,
+   "title": "California District 39",
+   "short": "CA-39",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-39"
+  },
+  {
+   "id": 87001,
+   "title": "California District 4",
+   "short": "CA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-04"
+  },
+  {
+   "id": 86991,
+   "title": "California District 40",
+   "short": "CA-40",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-40"
+  },
+  {
+   "id": 86992,
+   "title": "California District 41",
+   "short": "CA-41",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-41"
+  },
+  {
+   "id": 86993,
+   "title": "California District 42",
+   "short": "CA-42",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-42"
+  },
+  {
+   "id": 86994,
+   "title": "California District 43",
+   "short": "CA-43",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-43"
+  },
+  {
+   "id": 86995,
+   "title": "California District 44",
+   "short": "CA-44",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-44"
+  },
+  {
+   "id": 86996,
+   "title": "California District 45",
+   "short": "CA-45",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-45",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 86997,
+   "title": "California District 46",
+   "short": "CA-46",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-46"
+  },
+  {
+   "id": 86998,
+   "title": "California District 47",
+   "short": "CA-47",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-47"
+  },
+  {
+   "id": 86999,
+   "title": "California District 48",
+   "short": "CA-48",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-48"
+  },
+  {
+   "id": 87000,
+   "title": "California District 49",
+   "short": "CA-49",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-49"
+  },
+  {
+   "id": 87005,
+   "title": "California District 5",
+   "short": "CA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-05"
+  },
+  {
+   "id": 87002,
+   "title": "California District 50",
+   "short": "CA-50",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-50"
+  },
+  {
+   "id": 87003,
+   "title": "California District 51",
+   "short": "CA-51",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-51"
+  },
+  {
+   "id": 87004,
+   "title": "California District 52",
+   "short": "CA-52",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-52"
+  },
+  {
+   "id": 87006,
+   "title": "California District 6",
+   "short": "CA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-06"
+  },
+  {
+   "id": 87007,
+   "title": "California District 7",
+   "short": "CA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-07"
+  },
+  {
+   "id": 87008,
+   "title": "California District 8",
+   "short": "CA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-08"
+  },
+  {
+   "id": 87009,
+   "title": "California District 9",
+   "short": "CA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ca",
+   "district": "ca-09"
+  },
+  {
+   "id": 87010,
+   "title": "Colorado District 1",
+   "short": "CO-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-01"
+  },
+  {
+   "id": 87011,
+   "title": "Colorado District 2",
+   "short": "CO-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-02"
+  },
+  {
+   "id": 87012,
+   "title": "Colorado District 3",
+   "short": "CO-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-03"
+  },
+  {
+   "id": 87013,
+   "title": "Colorado District 4",
+   "short": "CO-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-04"
+  },
+  {
+   "id": 87014,
+   "title": "Colorado District 5",
+   "short": "CO-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-05"
+  },
+  {
+   "id": 87015,
+   "title": "Colorado District 6",
+   "short": "CO-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-06"
+  },
+  {
+   "id": 87016,
+   "title": "Colorado District 7",
+   "short": "CO-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-07"
+  },
+  {
+   "id": 87017,
+   "title": "Colorado District 8",
+   "short": "CO-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "co",
+   "district": "co-08",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87023,
+   "title": "Connecticut District 1",
+   "short": "CT-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ct",
+   "district": "ct-01"
+  },
+  {
+   "id": 87027,
+   "title": "Connecticut District 2",
+   "short": "CT-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ct",
+   "district": "ct-02"
+  },
+  {
+   "id": 87028,
+   "title": "Connecticut District 3",
+   "short": "CT-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ct",
+   "district": "ct-03"
+  },
+  {
+   "id": 87024,
+   "title": "Connecticut District 4",
+   "short": "CT-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ct",
+   "district": "ct-04"
+  },
+  {
+   "id": 87025,
+   "title": "Connecticut District 5",
+   "short": "CT-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ct",
+   "district": "ct-05"
+  },
+  {
+   "id": 87035,
+   "title": "Delaware At-Large",
+   "short": "DE-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "de",
+   "district": "de-al"
+  },
+  {
+   "id": 87040,
+   "title": "Florida District 1",
+   "short": "FL-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-01",
+   "priorParty": "R"
+  },
+  {
+   "id": 87049,
+   "title": "Florida District 10",
+   "short": "FL-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-10"
+  },
+  {
+   "id": 87050,
+   "title": "Florida District 11",
+   "short": "FL-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-11"
+  },
+  {
+   "id": 87051,
+   "title": "Florida District 12",
+   "short": "FL-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-12",
+   "priorParty": "R"
+  },
+  {
+   "id": 87052,
+   "title": "Florida District 13",
+   "short": "FL-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-13",
+   "priorParty": "R"
+  },
+  {
+   "id": 87053,
+   "title": "Florida District 14",
+   "short": "FL-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-14",
+   "priorParty": "D"
+  },
+  {
+   "id": 87054,
+   "title": "Florida District 15",
+   "short": "FL-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-15",
+   "priorParty": "R"
+  },
+  {
+   "id": 87055,
+   "title": "Florida District 16",
+   "short": "FL-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-16"
+  },
+  {
+   "id": 87056,
+   "title": "Florida District 17",
+   "short": "FL-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-17",
+   "priorParty": "R"
+  },
+  {
+   "id": 87057,
+   "title": "Florida District 18",
+   "short": "FL-18",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-18",
+   "priorParty": "R"
+  },
+  {
+   "id": 87058,
+   "title": "Florida District 19",
+   "short": "FL-19",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-19"
+  },
+  {
+   "id": 87041,
+   "title": "Florida District 2",
+   "short": "FL-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-02"
+  },
+  {
+   "id": 87059,
+   "title": "Florida District 20",
+   "short": "FL-20",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-20"
+  },
+  {
+   "id": 87060,
+   "title": "Florida District 21",
+   "short": "FL-21",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-21",
+   "priorParty": "R"
+  },
+  {
+   "id": 87061,
+   "title": "Florida District 22",
+   "short": "FL-22",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-22"
+  },
+  {
+   "id": 87062,
+   "title": "Florida District 23",
+   "short": "FL-23",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-23"
+  },
+  {
+   "id": 87063,
+   "title": "Florida District 24",
+   "short": "FL-24",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-24"
+  },
+  {
+   "id": 87064,
+   "title": "Florida District 25",
+   "short": "FL-25",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-25"
+  },
+  {
+   "id": 87065,
+   "title": "Florida District 26",
+   "short": "FL-26",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-26",
+   "priorParty": "R"
+  },
+  {
+   "id": 87066,
+   "title": "Florida District 27",
+   "short": "FL-27",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-27",
+   "priorParty": "R"
+  },
+  {
+   "id": 87067,
+   "title": "Florida District 28",
+   "short": "FL-28",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-28",
+   "priorParty": "R"
+  },
+  {
+   "id": 87042,
+   "title": "Florida District 3",
+   "short": "FL-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-03",
+   "priorParty": "R"
+  },
+  {
+   "id": 87043,
+   "title": "Florida District 4",
+   "short": "FL-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-04",
+   "priorParty": "R"
+  },
+  {
+   "id": 87044,
+   "title": "Florida District 5",
+   "short": "FL-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-05",
+   "priorParty": "R"
+  },
+  {
+   "id": 87045,
+   "title": "Florida District 6",
+   "short": "FL-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-06",
+   "priorParty": "R"
+  },
+  {
+   "id": 87046,
+   "title": "Florida District 7",
+   "short": "FL-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-07"
+  },
+  {
+   "id": 87047,
+   "title": "Florida District 8",
+   "short": "FL-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-08",
+   "priorParty": "R"
+  },
+  {
+   "id": 87048,
+   "title": "Florida District 9",
+   "short": "FL-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "fl",
+   "district": "fl-09",
+   "priorParty": "D"
+  },
+  {
+   "id": 87073,
+   "title": "Georgia District 1",
+   "short": "GA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-01"
+  },
+  {
+   "id": 87082,
+   "title": "Georgia District 10",
+   "short": "GA-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-10"
+  },
+  {
+   "id": 87083,
+   "title": "Georgia District 11",
+   "short": "GA-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-11"
+  },
+  {
+   "id": 87084,
+   "title": "Georgia District 12",
+   "short": "GA-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-12"
+  },
+  {
+   "id": 87085,
+   "title": "Georgia District 13",
+   "short": "GA-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-13"
+  },
+  {
+   "id": 87086,
+   "title": "Georgia District 14",
+   "short": "GA-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-14"
+  },
+  {
+   "id": 87074,
+   "title": "Georgia District 2",
+   "short": "GA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-02"
+  },
+  {
+   "id": 87075,
+   "title": "Georgia District 3",
+   "short": "GA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-03"
+  },
+  {
+   "id": 87076,
+   "title": "Georgia District 4",
+   "short": "GA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-04"
+  },
+  {
+   "id": 87077,
+   "title": "Georgia District 5",
+   "short": "GA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-05"
+  },
+  {
+   "id": 87078,
+   "title": "Georgia District 6",
+   "short": "GA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-06"
+  },
+  {
+   "id": 87079,
+   "title": "Georgia District 7",
+   "short": "GA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-07"
+  },
+  {
+   "id": 87080,
+   "title": "Georgia District 8",
+   "short": "GA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-08"
+  },
+  {
+   "id": 87081,
+   "title": "Georgia District 9",
+   "short": "GA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ga",
+   "district": "ga-09"
+  },
+  {
+   "id": 87098,
+   "title": "Hawaii District 1",
+   "short": "HI-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "hi",
+   "district": "hi-01"
+  },
+  {
+   "id": 87099,
+   "title": "Hawaii District 2",
+   "short": "HI-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "hi",
+   "district": "hi-02"
+  },
+  {
+   "id": 87104,
+   "title": "Idaho District 1",
+   "short": "ID-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "id",
+   "district": "id-01"
+  },
+  {
+   "id": 87105,
+   "title": "Idaho District 2",
+   "short": "ID-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "id",
+   "district": "id-02"
+  },
+  {
+   "id": 87112,
+   "title": "Illinois District 1",
+   "short": "IL-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-01"
+  },
+  {
+   "id": 87121,
+   "title": "Illinois District 10",
+   "short": "IL-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-10"
+  },
+  {
+   "id": 87122,
+   "title": "Illinois District 11",
+   "short": "IL-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-11"
+  },
+  {
+   "id": 87123,
+   "title": "Illinois District 12",
+   "short": "IL-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-12"
+  },
+  {
+   "id": 87124,
+   "title": "Illinois District 13",
+   "short": "IL-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-13"
+  },
+  {
+   "id": 87125,
+   "title": "Illinois District 14",
+   "short": "IL-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-14"
+  },
+  {
+   "id": 87126,
+   "title": "Illinois District 15",
+   "short": "IL-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-15"
+  },
+  {
+   "id": 87127,
+   "title": "Illinois District 16",
+   "short": "IL-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-16"
+  },
+  {
+   "id": 87128,
+   "title": "Illinois District 17",
+   "short": "IL-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-17"
+  },
+  {
+   "id": 87113,
+   "title": "Illinois District 2",
+   "short": "IL-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-02"
+  },
+  {
+   "id": 87114,
+   "title": "Illinois District 3",
+   "short": "IL-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-03"
+  },
+  {
+   "id": 87115,
+   "title": "Illinois District 4",
+   "short": "IL-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-04"
+  },
+  {
+   "id": 87116,
+   "title": "Illinois District 5",
+   "short": "IL-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-05"
+  },
+  {
+   "id": 87117,
+   "title": "Illinois District 6",
+   "short": "IL-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-06"
+  },
+  {
+   "id": 87118,
+   "title": "Illinois District 7",
+   "short": "IL-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-07"
+  },
+  {
+   "id": 87119,
+   "title": "Illinois District 8",
+   "short": "IL-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-08"
+  },
+  {
+   "id": 87120,
+   "title": "Illinois District 9",
+   "short": "IL-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "il",
+   "district": "il-09"
+  },
+  {
+   "id": 87135,
+   "title": "Indiana District 1",
+   "short": "IN-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-01"
+  },
+  {
+   "id": 87136,
+   "title": "Indiana District 2",
+   "short": "IN-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-02"
+  },
+  {
+   "id": 87137,
+   "title": "Indiana District 3",
+   "short": "IN-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-03"
+  },
+  {
+   "id": 87138,
+   "title": "Indiana District 4",
+   "short": "IN-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-04"
+  },
+  {
+   "id": 87139,
+   "title": "Indiana District 5",
+   "short": "IN-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-05"
+  },
+  {
+   "id": 87140,
+   "title": "Indiana District 6",
+   "short": "IN-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-06"
+  },
+  {
+   "id": 87141,
+   "title": "Indiana District 7",
+   "short": "IN-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-07"
+  },
+  {
+   "id": 87142,
+   "title": "Indiana District 8",
+   "short": "IN-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-08"
+  },
+  {
+   "id": 87143,
+   "title": "Indiana District 9",
+   "short": "IN-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "in",
+   "district": "in-09"
+  },
+  {
+   "id": 87147,
+   "title": "Iowa District 1",
+   "short": "IA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ia",
+   "district": "ia-01",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87148,
+   "title": "Iowa District 2",
+   "short": "IA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ia",
+   "district": "ia-02"
+  },
+  {
+   "id": 87149,
+   "title": "Iowa District 3",
+   "short": "IA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ia",
+   "district": "ia-03",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87150,
+   "title": "Iowa District 4",
+   "short": "IA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ia",
+   "district": "ia-04"
+  },
+  {
+   "id": 87158,
+   "title": "Kansas District 1",
+   "short": "KS-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ks",
+   "district": "ks-01"
+  },
+  {
+   "id": 87159,
+   "title": "Kansas District 2",
+   "short": "KS-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ks",
+   "district": "ks-02"
+  },
+  {
+   "id": 87160,
+   "title": "Kansas District 3",
+   "short": "KS-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ks",
+   "district": "ks-03"
+  },
+  {
+   "id": 87161,
+   "title": "Kansas District 4",
+   "short": "KS-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ks",
+   "district": "ks-04"
+  },
+  {
+   "id": 87168,
+   "title": "Kentucky District 1",
+   "short": "KY-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-01"
+  },
+  {
+   "id": 87169,
+   "title": "Kentucky District 2",
+   "short": "KY-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-02"
+  },
+  {
+   "id": 87170,
+   "title": "Kentucky District 3",
+   "short": "KY-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-03"
+  },
+  {
+   "id": 87171,
+   "title": "Kentucky District 4",
+   "short": "KY-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-04"
+  },
+  {
+   "id": 87172,
+   "title": "Kentucky District 5",
+   "short": "KY-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-05"
+  },
+  {
+   "id": 87173,
+   "title": "Kentucky District 6",
+   "short": "KY-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ky",
+   "district": "ky-06"
+  },
+  {
+   "id": 87177,
+   "title": "Louisiana District 1",
+   "short": "LA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-01"
+  },
+  {
+   "id": 87178,
+   "title": "Louisiana District 2",
+   "short": "LA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-02"
+  },
+  {
+   "id": 87179,
+   "title": "Louisiana District 3",
+   "short": "LA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-03"
+  },
+  {
+   "id": 87180,
+   "title": "Louisiana District 4",
+   "short": "LA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-04"
+  },
+  {
+   "id": 87181,
+   "title": "Louisiana District 5",
+   "short": "LA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-05"
+  },
+  {
+   "id": 87182,
+   "title": "Louisiana District 6",
+   "short": "LA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "la",
+   "district": "la-06"
+  },
+  {
+   "id": 87186,
+   "title": "Maine District 1",
+   "short": "ME-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "me",
+   "district": "me-01"
+  },
+  {
+   "id": 87187,
+   "title": "Maine District 2",
+   "short": "ME-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "me",
+   "district": "me-02",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87190,
+   "title": "Maryland District 1",
+   "short": "MD-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-01"
+  },
+  {
+   "id": 87191,
+   "title": "Maryland District 2",
+   "short": "MD-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-02"
+  },
+  {
+   "id": 87192,
+   "title": "Maryland District 3",
+   "short": "MD-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-03"
+  },
+  {
+   "id": 87193,
+   "title": "Maryland District 4",
+   "short": "MD-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-04"
+  },
+  {
+   "id": 87194,
+   "title": "Maryland District 5",
+   "short": "MD-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-05"
+  },
+  {
+   "id": 87195,
+   "title": "Maryland District 6",
+   "short": "MD-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-06"
+  },
+  {
+   "id": 87196,
+   "title": "Maryland District 7",
+   "short": "MD-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-07"
+  },
+  {
+   "id": 87197,
+   "title": "Maryland District 8",
+   "short": "MD-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "md",
+   "district": "md-08"
+  },
+  {
+   "id": 87266,
+   "title": "Massachusetts District 1",
+   "short": "MA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-01"
+  },
+  {
+   "id": 87267,
+   "title": "Massachusetts District 2",
+   "short": "MA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-02"
+  },
+  {
+   "id": 87268,
+   "title": "Massachusetts District 3",
+   "short": "MA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-03"
+  },
+  {
+   "id": 87269,
+   "title": "Massachusetts District 4",
+   "short": "MA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-04"
+  },
+  {
+   "id": 87270,
+   "title": "Massachusetts District 5",
+   "short": "MA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-05"
+  },
+  {
+   "id": 87271,
+   "title": "Massachusetts District 6",
+   "short": "MA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-06"
+  },
+  {
+   "id": 87272,
+   "title": "Massachusetts District 7",
+   "short": "MA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-07"
+  },
+  {
+   "id": 87273,
+   "title": "Massachusetts District 8",
+   "short": "MA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-08"
+  },
+  {
+   "id": 87274,
+   "title": "Massachusetts District 9",
+   "short": "MA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ma",
+   "district": "ma-09"
+  },
+  {
+   "id": 87201,
+   "title": "Michigan District 1",
+   "short": "MI-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-01"
+  },
+  {
+   "id": 87210,
+   "title": "Michigan District 10",
+   "short": "MI-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-10",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87211,
+   "title": "Michigan District 11",
+   "short": "MI-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-11"
+  },
+  {
+   "id": 87212,
+   "title": "Michigan District 12",
+   "short": "MI-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-12"
+  },
+  {
+   "id": 87213,
+   "title": "Michigan District 13",
+   "short": "MI-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-13"
+  },
+  {
+   "id": 87202,
+   "title": "Michigan District 2",
+   "short": "MI-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-02"
+  },
+  {
+   "id": 87203,
+   "title": "Michigan District 3",
+   "short": "MI-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-03"
+  },
+  {
+   "id": 87204,
+   "title": "Michigan District 4",
+   "short": "MI-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-04"
+  },
+  {
+   "id": 87205,
+   "title": "Michigan District 5",
+   "short": "MI-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-05"
+  },
+  {
+   "id": 87206,
+   "title": "Michigan District 6",
+   "short": "MI-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-06"
+  },
+  {
+   "id": 87207,
+   "title": "Michigan District 7",
+   "short": "MI-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-07",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87208,
+   "title": "Michigan District 8",
+   "short": "MI-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-08",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87209,
+   "title": "Michigan District 9",
+   "short": "MI-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mi",
+   "district": "mi-09"
+  },
+  {
+   "id": 87221,
+   "title": "Minnesota District 1",
+   "short": "MN-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-01"
+  },
+  {
+   "id": 87222,
+   "title": "Minnesota District 2",
+   "short": "MN-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-02"
+  },
+  {
+   "id": 87223,
+   "title": "Minnesota District 3",
+   "short": "MN-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-03"
+  },
+  {
+   "id": 87224,
+   "title": "Minnesota District 4",
+   "short": "MN-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-04"
+  },
+  {
+   "id": 87225,
+   "title": "Minnesota District 5",
+   "short": "MN-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-05"
+  },
+  {
+   "id": 87226,
+   "title": "Minnesota District 6",
+   "short": "MN-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-06"
+  },
+  {
+   "id": 87227,
+   "title": "Minnesota District 7",
+   "short": "MN-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-07"
+  },
+  {
+   "id": 87228,
+   "title": "Minnesota District 8",
+   "short": "MN-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mn",
+   "district": "mn-08"
+  },
+  {
+   "id": 81000,
+   "title": "Mississippi District 1",
+   "short": "MS-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ms",
+   "district": "ms-01"
+  },
+  {
+   "id": 81001,
+   "title": "Mississippi District 2",
+   "short": "MS-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ms",
+   "district": "ms-02"
+  },
+  {
+   "id": 81002,
+   "title": "Mississippi District 3",
+   "short": "MS-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ms",
+   "district": "ms-03"
+  },
+  {
+   "id": 81003,
+   "title": "Mississippi District 4",
+   "short": "MS-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ms",
+   "district": "ms-04"
+  },
+  {
+   "id": 87234,
+   "title": "Missouri District 1",
+   "short": "MO-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-01"
+  },
+  {
+   "id": 87235,
+   "title": "Missouri District 2",
+   "short": "MO-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-02"
+  },
+  {
+   "id": 87236,
+   "title": "Missouri District 3",
+   "short": "MO-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-03"
+  },
+  {
+   "id": 87237,
+   "title": "Missouri District 4",
+   "short": "MO-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-04"
+  },
+  {
+   "id": 87238,
+   "title": "Missouri District 5",
+   "short": "MO-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-05"
+  },
+  {
+   "id": 87239,
+   "title": "Missouri District 6",
+   "short": "MO-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-06"
+  },
+  {
+   "id": 87240,
+   "title": "Missouri District 7",
+   "short": "MO-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-07"
+  },
+  {
+   "id": 87241,
+   "title": "Missouri District 8",
+   "short": "MO-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mo",
+   "district": "mo-08"
+  },
+  {
+   "id": 87245,
+   "title": "Montana District 1",
+   "short": "MT-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mt",
+   "district": "mt-01"
+  },
+  {
+   "id": 87246,
+   "title": "Montana District 2",
+   "short": "MT-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "mt",
+   "district": "mt-02"
+  },
+  {
+   "id": 87251,
+   "title": "Nebraska District 1",
+   "short": "NE-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ne",
+   "district": "ne-01"
+  },
+  {
+   "id": 87252,
+   "title": "Nebraska District 2",
+   "short": "NE-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ne",
+   "district": "ne-02",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87253,
+   "title": "Nebraska District 3",
+   "short": "NE-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ne",
+   "district": "ne-03"
+  },
+  {
+   "id": 87256,
+   "title": "Nevada District 1",
+   "short": "NV-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nv",
+   "district": "nv-01"
+  },
+  {
+   "id": 87257,
+   "title": "Nevada District 2",
+   "short": "NV-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nv",
+   "district": "nv-02"
+  },
+  {
+   "id": 87258,
+   "title": "Nevada District 3",
+   "short": "NV-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nv",
+   "district": "nv-03"
+  },
+  {
+   "id": 87259,
+   "title": "Nevada District 4",
+   "short": "NV-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nv",
+   "district": "nv-04"
+  },
+  {
+   "id": 87281,
+   "title": "New Hampshire District 1",
+   "short": "NH-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nh",
+   "district": "nh-01"
+  },
+  {
+   "id": 87282,
+   "title": "New Hampshire District 2",
+   "short": "NH-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nh",
+   "district": "nh-02"
+  },
+  {
+   "id": 87290,
+   "title": "New Jersey District 1",
+   "short": "NJ-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-01"
+  },
+  {
+   "id": 87299,
+   "title": "New Jersey District 10",
+   "short": "NJ-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-10"
+  },
+  {
+   "id": 87300,
+   "title": "New Jersey District 11",
+   "short": "NJ-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-11"
+  },
+  {
+   "id": 87301,
+   "title": "New Jersey District 12",
+   "short": "NJ-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-12"
+  },
+  {
+   "id": 87291,
+   "title": "New Jersey District 2",
+   "short": "NJ-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-02"
+  },
+  {
+   "id": 87292,
+   "title": "New Jersey District 3",
+   "short": "NJ-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-03"
+  },
+  {
+   "id": 87293,
+   "title": "New Jersey District 4",
+   "short": "NJ-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-04"
+  },
+  {
+   "id": 87294,
+   "title": "New Jersey District 5",
+   "short": "NJ-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-05"
+  },
+  {
+   "id": 87295,
+   "title": "New Jersey District 6",
+   "short": "NJ-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-06"
+  },
+  {
+   "id": 87296,
+   "title": "New Jersey District 7",
+   "short": "NJ-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-07",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87297,
+   "title": "New Jersey District 8",
+   "short": "NJ-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-08"
+  },
+  {
+   "id": 87298,
+   "title": "New Jersey District 9",
+   "short": "NJ-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nj",
+   "district": "nj-09"
+  },
+  {
+   "id": 87285,
+   "title": "New Mexico District 1",
+   "short": "NM-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nm",
+   "district": "nm-01"
+  },
+  {
+   "id": 87286,
+   "title": "New Mexico District 2",
+   "short": "NM-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nm",
+   "district": "nm-02",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87287,
+   "title": "New Mexico District 3",
+   "short": "NM-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nm",
+   "district": "nm-03"
+  },
+  {
+   "id": 87303,
+   "title": "New York District 1",
+   "short": "NY-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-01",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87312,
+   "title": "New York District 10",
+   "short": "NY-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-10"
+  },
+  {
+   "id": 87313,
+   "title": "New York District 11",
+   "short": "NY-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-11"
+  },
+  {
+   "id": 87314,
+   "title": "New York District 12",
+   "short": "NY-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-12"
+  },
+  {
+   "id": 87315,
+   "title": "New York District 13",
+   "short": "NY-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-13"
+  },
+  {
+   "id": 87316,
+   "title": "New York District 14",
+   "short": "NY-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-14"
+  },
+  {
+   "id": 87317,
+   "title": "New York District 15",
+   "short": "NY-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-15"
+  },
+  {
+   "id": 87318,
+   "title": "New York District 16",
+   "short": "NY-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-16"
+  },
+  {
+   "id": 87319,
+   "title": "New York District 17",
+   "short": "NY-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-17",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87320,
+   "title": "New York District 18",
+   "short": "NY-18",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-18"
+  },
+  {
+   "id": 87321,
+   "title": "New York District 19",
+   "short": "NY-19",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-19"
+  },
+  {
+   "id": 87304,
+   "title": "New York District 2",
+   "short": "NY-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-02"
+  },
+  {
+   "id": 87322,
+   "title": "New York District 20",
+   "short": "NY-20",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-20"
+  },
+  {
+   "id": 87323,
+   "title": "New York District 21",
+   "short": "NY-21",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-21"
+  },
+  {
+   "id": 87324,
+   "title": "New York District 22",
+   "short": "NY-22",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-22"
+  },
+  {
+   "id": 87325,
+   "title": "New York District 23",
+   "short": "NY-23",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-23"
+  },
+  {
+   "id": 87326,
+   "title": "New York District 24",
+   "short": "NY-24",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-24"
+  },
+  {
+   "id": 87327,
+   "title": "New York District 25",
+   "short": "NY-25",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-25"
+  },
+  {
+   "id": 87328,
+   "title": "New York District 26",
+   "short": "NY-26",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-26"
+  },
+  {
+   "id": 87305,
+   "title": "New York District 3",
+   "short": "NY-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-03"
+  },
+  {
+   "id": 87306,
+   "title": "New York District 4",
+   "short": "NY-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-04"
+  },
+  {
+   "id": 87307,
+   "title": "New York District 5",
+   "short": "NY-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-05"
+  },
+  {
+   "id": 87308,
+   "title": "New York District 6",
+   "short": "NY-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-06"
+  },
+  {
+   "id": 87309,
+   "title": "New York District 7",
+   "short": "NY-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-07"
+  },
+  {
+   "id": 87310,
+   "title": "New York District 8",
+   "short": "NY-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-08"
+  },
+  {
+   "id": 87311,
+   "title": "New York District 9",
+   "short": "NY-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ny",
+   "district": "ny-09"
+  },
+  {
+   "id": 87332,
+   "title": "North Carolina District 1",
+   "short": "NC-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-01",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87341,
+   "title": "North Carolina District 10",
+   "short": "NC-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-10"
+  },
+  {
+   "id": 87342,
+   "title": "North Carolina District 11",
+   "short": "NC-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-11"
+  },
+  {
+   "id": 87343,
+   "title": "North Carolina District 12",
+   "short": "NC-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-12"
+  },
+  {
+   "id": 87344,
+   "title": "North Carolina District 13",
+   "short": "NC-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-13"
+  },
+  {
+   "id": 87345,
+   "title": "North Carolina District 14",
+   "short": "NC-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-14"
+  },
+  {
+   "id": 87333,
+   "title": "North Carolina District 2",
+   "short": "NC-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-02"
+  },
+  {
+   "id": 87334,
+   "title": "North Carolina District 3",
+   "short": "NC-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-03"
+  },
+  {
+   "id": 87335,
+   "title": "North Carolina District 4",
+   "short": "NC-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-04"
+  },
+  {
+   "id": 87336,
+   "title": "North Carolina District 5",
+   "short": "NC-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-05"
+  },
+  {
+   "id": 87337,
+   "title": "North Carolina District 6",
+   "short": "NC-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-06"
+  },
+  {
+   "id": 87338,
+   "title": "North Carolina District 7",
+   "short": "NC-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-07"
+  },
+  {
+   "id": 87339,
+   "title": "North Carolina District 8",
+   "short": "NC-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-08"
+  },
+  {
+   "id": 87340,
+   "title": "North Carolina District 9",
+   "short": "NC-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nc",
+   "district": "nc-09"
+  },
+  {
+   "id": 87347,
+   "title": "North Dakota At-Large",
+   "short": "ND-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "nd",
+   "district": "nd-al"
+  },
+  {
+   "id": 87350,
+   "title": "Ohio District 1",
+   "short": "OH-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-01"
+  },
+  {
+   "id": 87359,
+   "title": "Ohio District 10",
+   "short": "OH-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-10"
+  },
+  {
+   "id": 87360,
+   "title": "Ohio District 11",
+   "short": "OH-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-11"
+  },
+  {
+   "id": 87361,
+   "title": "Ohio District 12",
+   "short": "OH-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-12"
+  },
+  {
+   "id": 87362,
+   "title": "Ohio District 13",
+   "short": "OH-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-13",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87363,
+   "title": "Ohio District 14",
+   "short": "OH-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-14"
+  },
+  {
+   "id": 87364,
+   "title": "Ohio District 15",
+   "short": "OH-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-15"
+  },
+  {
+   "id": 87351,
+   "title": "Ohio District 2",
+   "short": "OH-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-02"
+  },
+  {
+   "id": 87352,
+   "title": "Ohio District 3",
+   "short": "OH-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-03"
+  },
+  {
+   "id": 87353,
+   "title": "Ohio District 4",
+   "short": "OH-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-04"
+  },
+  {
+   "id": 87354,
+   "title": "Ohio District 5",
+   "short": "OH-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-05"
+  },
+  {
+   "id": 87355,
+   "title": "Ohio District 6",
+   "short": "OH-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-06"
+  },
+  {
+   "id": 87356,
+   "title": "Ohio District 7",
+   "short": "OH-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-07"
+  },
+  {
+   "id": 87357,
+   "title": "Ohio District 8",
+   "short": "OH-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-08"
+  },
+  {
+   "id": 87358,
+   "title": "Ohio District 9",
+   "short": "OH-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "oh",
+   "district": "oh-09",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87509,
+   "title": "Oklahoma District 1",
+   "short": "OK-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ok",
+   "district": "ok-01",
+   "priorParty": "R",
+   "oklahoma": true
+  },
+  {
+   "id": 87510,
+   "title": "Oklahoma District 2",
+   "short": "OK-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ok",
+   "district": "ok-02",
+   "priorParty": "R",
+   "oklahoma": true
+  },
+  {
+   "id": 87511,
+   "title": "Oklahoma District 3",
+   "short": "OK-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ok",
+   "district": "ok-03",
+   "priorParty": "R",
+   "oklahoma": true
+  },
+  {
+   "id": 87512,
+   "title": "Oklahoma District 4",
+   "short": "OK-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ok",
+   "district": "ok-04",
+   "priorParty": "R",
+   "oklahoma": true
+  },
+  {
+   "id": 87513,
+   "title": "Oklahoma District 5",
+   "short": "OK-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ok",
+   "district": "ok-05",
+   "priorParty": "R",
+   "oklahoma": true
+  },
+  {
+   "id": 87368,
+   "title": "Oregon District 1",
+   "short": "OR-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-01"
+  },
+  {
+   "id": 87369,
+   "title": "Oregon District 2",
+   "short": "OR-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-02"
+  },
+  {
+   "id": 87370,
+   "title": "Oregon District 3",
+   "short": "OR-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-03"
+  },
+  {
+   "id": 87371,
+   "title": "Oregon District 4",
+   "short": "OR-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-04"
+  },
+  {
+   "id": 87372,
+   "title": "Oregon District 5",
+   "short": "OR-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-05"
+  },
+  {
+   "id": 87373,
+   "title": "Oregon District 6",
+   "short": "OR-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "or",
+   "district": "or-06"
+  },
+  {
+   "id": 87376,
+   "title": "Pennsylvania District 1",
+   "short": "PA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-01",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87385,
+   "title": "Pennsylvania District 10",
+   "short": "PA-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-10",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87386,
+   "title": "Pennsylvania District 11",
+   "short": "PA-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-11"
+  },
+  {
+   "id": 87387,
+   "title": "Pennsylvania District 12",
+   "short": "PA-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-12"
+  },
+  {
+   "id": 87388,
+   "title": "Pennsylvania District 13",
+   "short": "PA-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-13"
+  },
+  {
+   "id": 87389,
+   "title": "Pennsylvania District 14",
+   "short": "PA-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-14"
+  },
+  {
+   "id": 87390,
+   "title": "Pennsylvania District 15",
+   "short": "PA-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-15"
+  },
+  {
+   "id": 87391,
+   "title": "Pennsylvania District 16",
+   "short": "PA-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-16"
+  },
+  {
+   "id": 87392,
+   "title": "Pennsylvania District 17",
+   "short": "PA-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-17"
+  },
+  {
+   "id": 87377,
+   "title": "Pennsylvania District 2",
+   "short": "PA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-02"
+  },
+  {
+   "id": 87378,
+   "title": "Pennsylvania District 3",
+   "short": "PA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-03"
+  },
+  {
+   "id": 87379,
+   "title": "Pennsylvania District 4",
+   "short": "PA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-04"
+  },
+  {
+   "id": 87380,
+   "title": "Pennsylvania District 5",
+   "short": "PA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-05"
+  },
+  {
+   "id": 87381,
+   "title": "Pennsylvania District 6",
+   "short": "PA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-06"
+  },
+  {
+   "id": 87382,
+   "title": "Pennsylvania District 7",
+   "short": "PA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-07",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87383,
+   "title": "Pennsylvania District 8",
+   "short": "PA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-08",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87384,
+   "title": "Pennsylvania District 9",
+   "short": "PA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "pa",
+   "district": "pa-09"
+  },
+  {
+   "id": 87394,
+   "title": "Rhode Island District 1",
+   "short": "RI-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ri",
+   "district": "ri-01"
+  },
+  {
+   "id": 87395,
+   "title": "Rhode Island District 2",
+   "short": "RI-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ri",
+   "district": "ri-02"
+  },
+  {
+   "id": 87402,
+   "title": "South Carolina District 1",
+   "short": "SC-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-01"
+  },
+  {
+   "id": 87403,
+   "title": "South Carolina District 2",
+   "short": "SC-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-02"
+  },
+  {
+   "id": 87404,
+   "title": "South Carolina District 3",
+   "short": "SC-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-03"
+  },
+  {
+   "id": 87405,
+   "title": "South Carolina District 4",
+   "short": "SC-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-04"
+  },
+  {
+   "id": 87406,
+   "title": "South Carolina District 5",
+   "short": "SC-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-05"
+  },
+  {
+   "id": 87407,
+   "title": "South Carolina District 6",
+   "short": "SC-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-06"
+  },
+  {
+   "id": 87408,
+   "title": "South Carolina District 7",
+   "short": "SC-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sc",
+   "district": "sc-07"
+  },
+  {
+   "id": 87445,
+   "title": "South Dakota At-Large",
+   "short": "SD-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "sd",
+   "district": "sd-al"
+  },
+  {
+   "id": 87448,
+   "title": "Tennessee District 1",
+   "short": "TN-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-01"
+  },
+  {
+   "id": 87449,
+   "title": "Tennessee District 2",
+   "short": "TN-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-02"
+  },
+  {
+   "id": 87450,
+   "title": "Tennessee District 3",
+   "short": "TN-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-03"
+  },
+  {
+   "id": 87451,
+   "title": "Tennessee District 4",
+   "short": "TN-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-04"
+  },
+  {
+   "id": 87452,
+   "title": "Tennessee District 5",
+   "short": "TN-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-05"
+  },
+  {
+   "id": 87453,
+   "title": "Tennessee District 6",
+   "short": "TN-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-06"
+  },
+  {
+   "id": 87454,
+   "title": "Tennessee District 7",
+   "short": "TN-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-07"
+  },
+  {
+   "id": 87455,
+   "title": "Tennessee District 8",
+   "short": "TN-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-08"
+  },
+  {
+   "id": 87456,
+   "title": "Tennessee District 9",
+   "short": "TN-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tn",
+   "district": "tn-09"
+  },
+  {
+   "id": 87411,
+   "title": "Texas District 1",
+   "short": "TX-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-01",
+   "priorParty": "R"
+  },
+  {
+   "id": 56006,
+   "title": "Texas District 10",
+   "short": "TX-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-10"
+  },
+  {
+   "id": 87418,
+   "title": "Texas District 11",
+   "short": "TX-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-11",
+   "priorParty": "R"
+  },
+  {
+   "id": 87419,
+   "title": "Texas District 12",
+   "short": "TX-12",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-12",
+   "priorParty": "R"
+  },
+  {
+   "id": 87420,
+   "title": "Texas District 13",
+   "short": "TX-13",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-13",
+   "priorParty": "R"
+  },
+  {
+   "id": 87421,
+   "title": "Texas District 14",
+   "short": "TX-14",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-14",
+   "priorParty": "R"
+  },
+  {
+   "id": 87422,
+   "title": "Texas District 15",
+   "short": "TX-15",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-15",
+   "priorParty": "R"
+  },
+  {
+   "id": 87423,
+   "title": "Texas District 16",
+   "short": "TX-16",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-16",
+   "priorParty": "D"
+  },
+  {
+   "id": 87424,
+   "title": "Texas District 17",
+   "short": "TX-17",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-17",
+   "priorParty": "R"
+  },
+  {
+   "id": 87425,
+   "title": "Texas District 18",
+   "short": "TX-18",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-18"
+  },
+  {
+   "id": 87426,
+   "title": "Texas District 19",
+   "short": "TX-19",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-19"
+  },
+  {
+   "id": 87412,
+   "title": "Texas District 2",
+   "short": "TX-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-02"
+  },
+  {
+   "id": 87427,
+   "title": "Texas District 20",
+   "short": "TX-20",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-20",
+   "priorParty": "D"
+  },
+  {
+   "id": 56007,
+   "title": "Texas District 21",
+   "short": "TX-21",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-21"
+  },
+  {
+   "id": 56008,
+   "title": "Texas District 22",
+   "short": "TX-22",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-22"
+  },
+  {
+   "id": 87428,
+   "title": "Texas District 23",
+   "short": "TX-23",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-23"
+  },
+  {
+   "id": 87429,
+   "title": "Texas District 24",
+   "short": "TX-24",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-24",
+   "priorParty": "R"
+  },
+  {
+   "id": 87430,
+   "title": "Texas District 25",
+   "short": "TX-25",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-25",
+   "priorParty": "R"
+  },
+  {
+   "id": 56009,
+   "title": "Texas District 26",
+   "short": "TX-26",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-26",
+   "priorParty": "R"
+  },
+  {
+   "id": 56010,
+   "title": "Texas District 27",
+   "short": "TX-27",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-27",
+   "priorParty": "R"
+  },
+  {
+   "id": 56011,
+   "title": "Texas District 28",
+   "short": "TX-28",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-28",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87431,
+   "title": "Texas District 29",
+   "short": "TX-29",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-29",
+   "priorParty": "D"
+  },
+  {
+   "id": 87413,
+   "title": "Texas District 3",
+   "short": "TX-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-03",
+   "priorParty": "R"
+  },
+  {
+   "id": 87432,
+   "title": "Texas District 30",
+   "short": "TX-30",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-30"
+  },
+  {
+   "id": 56012,
+   "title": "Texas District 31",
+   "short": "TX-31",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-31",
+   "priorParty": "R"
+  },
+  {
+   "id": 87433,
+   "title": "Texas District 32",
+   "short": "TX-32",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-32"
+  },
+  {
+   "id": 87434,
+   "title": "Texas District 33",
+   "short": "TX-33",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-33"
+  },
+  {
+   "id": 56013,
+   "title": "Texas District 34",
+   "short": "TX-34",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-34",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87435,
+   "title": "Texas District 35",
+   "short": "TX-35",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-35"
+  },
+  {
+   "id": 56014,
+   "title": "Texas District 36",
+   "short": "TX-36",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-36",
+   "priorParty": "R"
+  },
+  {
+   "id": 87436,
+   "title": "Texas District 37",
+   "short": "TX-37",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-37"
+  },
+  {
+   "id": 87437,
+   "title": "Texas District 38",
+   "short": "TX-38",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-38"
+  },
+  {
+   "id": 56004,
+   "title": "Texas District 4",
+   "short": "TX-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-04",
+   "priorParty": "R"
+  },
+  {
+   "id": 87414,
+   "title": "Texas District 5",
+   "short": "TX-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-05",
+   "priorParty": "R"
+  },
+  {
+   "id": 87415,
+   "title": "Texas District 6",
+   "short": "TX-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-06",
+   "priorParty": "R"
+  },
+  {
+   "id": 87416,
+   "title": "Texas District 7",
+   "short": "TX-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-07",
+   "priorParty": "D"
+  },
+  {
+   "id": 56005,
+   "title": "Texas District 8",
+   "short": "TX-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-08"
+  },
+  {
+   "id": 87417,
+   "title": "Texas District 9",
+   "short": "TX-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "tx",
+   "district": "tx-09"
+  },
+  {
+   "id": 87457,
+   "title": "Utah District 1",
+   "short": "UT-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ut",
+   "district": "ut-01"
+  },
+  {
+   "id": 87458,
+   "title": "Utah District 2",
+   "short": "UT-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ut",
+   "district": "ut-02"
+  },
+  {
+   "id": 87459,
+   "title": "Utah District 3",
+   "short": "UT-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ut",
+   "district": "ut-03"
+  },
+  {
+   "id": 87460,
+   "title": "Utah District 4",
+   "short": "UT-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "ut",
+   "district": "ut-04"
+  },
+  {
+   "id": 87502,
+   "title": "Vermont At-Large",
+   "short": "VT-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "vt",
+   "district": "vt-al"
+  },
+  {
+   "id": 87461,
+   "title": "Virginia District 1",
+   "short": "VA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-01",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87470,
+   "title": "Virginia District 10",
+   "short": "VA-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-10"
+  },
+  {
+   "id": 87471,
+   "title": "Virginia District 11",
+   "short": "VA-11",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-11"
+  },
+  {
+   "id": 87462,
+   "title": "Virginia District 2",
+   "short": "VA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-02",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87463,
+   "title": "Virginia District 3",
+   "short": "VA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-03"
+  },
+  {
+   "id": 87464,
+   "title": "Virginia District 4",
+   "short": "VA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-04"
+  },
+  {
+   "id": 87465,
+   "title": "Virginia District 5",
+   "short": "VA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-05"
+  },
+  {
+   "id": 87466,
+   "title": "Virginia District 6",
+   "short": "VA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-06"
+  },
+  {
+   "id": 87467,
+   "title": "Virginia District 7",
+   "short": "VA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-07"
+  },
+  {
+   "id": 87468,
+   "title": "Virginia District 8",
+   "short": "VA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-08"
+  },
+  {
+   "id": 87469,
+   "title": "Virginia District 9",
+   "short": "VA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "va",
+   "district": "va-09"
+  },
+  {
+   "id": 87514,
+   "title": "Washington District 1",
+   "short": "WA-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-01"
+  },
+  {
+   "id": 87523,
+   "title": "Washington District 10",
+   "short": "WA-10",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-10"
+  },
+  {
+   "id": 87515,
+   "title": "Washington District 2",
+   "short": "WA-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-02"
+  },
+  {
+   "id": 87516,
+   "title": "Washington District 3",
+   "short": "WA-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-03",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87517,
+   "title": "Washington District 4",
+   "short": "WA-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-04"
+  },
+  {
+   "id": 87518,
+   "title": "Washington District 5",
+   "short": "WA-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-05"
+  },
+  {
+   "id": 87519,
+   "title": "Washington District 6",
+   "short": "WA-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-06"
+  },
+  {
+   "id": 87520,
+   "title": "Washington District 7",
+   "short": "WA-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-07"
+  },
+  {
+   "id": 87521,
+   "title": "Washington District 8",
+   "short": "WA-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-08"
+  },
+  {
+   "id": 87522,
+   "title": "Washington District 9",
+   "short": "WA-9",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wa",
+   "district": "wa-09"
+  },
+  {
+   "id": 87473,
+   "title": "West Virginia District 1",
+   "short": "WV-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wv",
+   "district": "wv-01"
+  },
+  {
+   "id": 87474,
+   "title": "West Virginia District 2",
+   "short": "WV-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wv",
+   "district": "wv-02"
+  },
+  {
+   "id": 87483,
+   "title": "Wisconsin District 1",
+   "short": "WI-1",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-01"
+  },
+  {
+   "id": 87484,
+   "title": "Wisconsin District 2",
+   "short": "WI-2",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-02"
+  },
+  {
+   "id": 87485,
+   "title": "Wisconsin District 3",
+   "short": "WI-3",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-03",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87486,
+   "title": "Wisconsin District 4",
+   "short": "WI-4",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-04"
+  },
+  {
+   "id": 87487,
+   "title": "Wisconsin District 5",
+   "short": "WI-5",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-05"
+  },
+  {
+   "id": 87488,
+   "title": "Wisconsin District 6",
+   "short": "WI-6",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-06"
+  },
+  {
+   "id": 87489,
+   "title": "Wisconsin District 7",
+   "short": "WI-7",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-07"
+  },
+  {
+   "id": 87490,
+   "title": "Wisconsin District 8",
+   "short": "WI-8",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wi",
+   "district": "wi-08"
+  },
+  {
+   "id": 87495,
+   "title": "Wyoming At-Large",
+   "short": "WY-AL",
+   "office": "U.S. House",
+   "category": "house",
+   "state": "wy",
+   "district": "wy-al"
+  },
+  {
+   "id": 158927,
+   "title": "Oklahoma Lieutenant Governor",
+   "short": "Lieutenant Governor",
+   "office": "Lieutenant Governor",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 2
+  },
+  {
+   "id": 159573,
+   "title": "Oklahoma State Auditor and Inspector",
+   "short": "State Auditor and Inspector",
+   "office": "State Auditor and Inspector",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 8
+  },
+  {
+   "id": 158930,
+   "title": "Oklahoma Superintendent of Public Instruction",
+   "short": "Superintendent of Public Instruction",
+   "office": "Superintendent of Public Instruction",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 9
+  },
+  {
+   "id": 158931,
+   "title": "Oklahoma Commissioner of Labor",
+   "short": "Commissioner of Labor",
+   "office": "Commissioner of Labor",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 10
+  },
+  {
+   "id": 158928,
+   "title": "Oklahoma Attorney General",
+   "short": "Attorney General",
+   "office": "Attorney General",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 11
+  },
+  {
+   "id": 158932,
+   "title": "Oklahoma Insurance Commissioner",
+   "short": "Insurance Commissioner",
+   "office": "Insurance Commissioner",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 13
+  },
+  {
+   "id": 158933,
+   "title": "Oklahoma Corporation Commissioner",
+   "short": "Corporation Commissioner",
+   "office": "Corporation Commissioner",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 14
+  },
+  {
+   "id": 158929,
+   "title": "Oklahoma State Treasurer",
+   "short": "State Treasurer",
+   "office": "State Treasurer",
+   "category": "ok",
+   "state": "ok",
+   "priorParty": "R",
+   "oklahoma": true,
+   "order": 19
+  },
+  {
+   "id": 158946,
+   "title": "Oklahoma State Question 845",
+   "short": "SQ 845",
+   "office": "State Question",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 115
+  },
+  {
+   "id": 158947,
+   "title": "Oklahoma State Question 847",
+   "short": "SQ 847",
+   "office": "State Question",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 118
+  },
+  {
+   "id": 158940,
+   "title": "Oklahoma Supreme Court District 9 Retention",
+   "short": "Supreme Court District 9 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 200
+  },
+  {
+   "id": 158942,
+   "title": "Oklahoma Court of Civil Appeals District 1 Office 1 Retention",
+   "short": "Court of Civil Appeals District 1 Office 1 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 201
+  },
+  {
+   "id": 158937,
+   "title": "Oklahoma Supreme Court District 1 Retention",
+   "short": "Supreme Court District 1 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 204
+  },
+  {
+   "id": 158943,
+   "title": "Oklahoma Court of Civil Appeals District 1 Office 2 Retention",
+   "short": "Court of Civil Appeals District 1 Office 2 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 205
+  },
+  {
+   "id": 158941,
+   "title": "Oklahoma Court of Criminal Appeals District 2 Retention",
+   "short": "Court of Criminal Appeals District 2 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 206
+  },
+  {
+   "id": 158938,
+   "title": "Oklahoma Supreme Court District 4 Retention",
+   "short": "Supreme Court District 4 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 207
+  },
+  {
+   "id": 158944,
+   "title": "Oklahoma Court of Civil Appeals District 2 Office 1 Retention",
+   "short": "Court of Civil Appeals District 2 Office 1 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 212
+  },
+  {
+   "id": 158945,
+   "title": "Oklahoma Court of Civil Appeals District 2 Office 2 Retention",
+   "short": "Court of Civil Appeals District 2 Office 2 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 216
+  },
+  {
+   "id": 158939,
+   "title": "Oklahoma Supreme Court District 6 Retention",
+   "short": "Supreme Court District 6 Retention",
+   "office": "Judicial Retention",
+   "category": "ok",
+   "state": "ok",
+   "oklahoma": true,
+   "order": 217
+  },
+  {
+   "id": 86907,
+   "title": "Alabama US Senate",
+   "short": "AL SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "al",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 86916,
+   "title": "Alaska US Senate",
+   "short": "AK SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ak",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 86949,
+   "title": "Arkansas US Senate",
+   "short": "AR SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ar",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87022,
+   "title": "Colorado US Senate",
+   "short": "CO SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "co",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87036,
+   "title": "Delaware US Senate",
+   "short": "DE SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "de",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87068,
+   "title": "Florida US Senate",
+   "short": "FL SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "fl",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87087,
+   "title": "Georgia US Senate",
+   "short": "GA SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ga",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87103,
+   "title": "Idaho US Senate",
+   "short": "ID SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "id",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87129,
+   "title": "Illinois US Senate",
+   "short": "IL SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "il",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87151,
+   "title": "Iowa US Senate",
+   "short": "IA SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ia",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87162,
+   "title": "Kansas US Senate",
+   "short": "KS SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ks",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87174,
+   "title": "Kentucky US Senate",
+   "short": "KY SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ky",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87183,
+   "title": "Louisiana US Senate",
+   "short": "LA SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "la",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87188,
+   "title": "Maine US Senate",
+   "short": "ME SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "me",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87275,
+   "title": "Massachusetts US Senate",
+   "short": "MA SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ma",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87214,
+   "title": "Michigan US Senate",
+   "short": "MI SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "mi",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87229,
+   "title": "Minnesota US Senate",
+   "short": "MN SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "mn",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 81004,
+   "title": "Mississippi US Senate",
+   "short": "MS SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ms",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87247,
+   "title": "Montana US Senate",
+   "short": "MT SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "mt",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87254,
+   "title": "Nebraska US Senate",
+   "short": "NE SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ne",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87283,
+   "title": "New Hampshire US Senate",
+   "short": "NH SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "nh",
+   "priorParty": "D",
+   "key": true
+  },
+  {
+   "id": 87302,
+   "title": "New Jersey US Senate",
+   "short": "NJ SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "nj",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87288,
+   "title": "New Mexico US Senate",
+   "short": "NM SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "nm",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87346,
+   "title": "North Carolina US Senate",
+   "short": "NC SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "nc",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87527,
+   "title": "Ohio US Senate",
+   "short": "OH SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "oh",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87526,
+   "title": "Oklahoma US Senate",
+   "short": "OK SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ok",
+   "priorParty": "R",
+   "key": true,
+   "oklahoma": true
+  },
+  {
+   "id": 87374,
+   "title": "Oregon US Senate",
+   "short": "OR SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "or",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87396,
+   "title": "Rhode Island US Senate",
+   "short": "RI SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "ri",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87409,
+   "title": "South Carolina US Senate",
+   "short": "SC SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "sc",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87446,
+   "title": "South Dakota US Senate",
+   "short": "SD SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "sd",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87475,
+   "title": "Tennessee US Senate",
+   "short": "TN SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "tn",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87438,
+   "title": "Texas US Senate",
+   "short": "TX SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "tx",
+   "priorParty": "R",
+   "key": true
+  },
+  {
+   "id": 87472,
+   "title": "Virginia US Senate",
+   "short": "VA SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "va",
+   "priorParty": "D",
+   "key": false
+  },
+  {
+   "id": 87477,
+   "title": "West Virginia US Senate",
+   "short": "WV SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "wv",
+   "priorParty": "R",
+   "key": false
+  },
+  {
+   "id": 87496,
+   "title": "Wyoming US Senate",
+   "short": "WY SEN",
+   "office": "U.S. Senate",
+   "category": "senate",
+   "state": "wy",
+   "priorParty": "R",
+   "key": false
+  }
+ ]
+}

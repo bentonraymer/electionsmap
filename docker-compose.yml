@@ -1,0 +1,10 @@
+services:
+  electionsmap:
+    image: ghcr.io/bentonraymer/electionsmap:latest
+    container_name: electionsmap
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8080:8080" # point your reverse proxy here (it must pass WebSocket upgrades for /ws)
+    volumes:
+      - ./data:/data
