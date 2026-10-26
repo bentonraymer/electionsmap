@@ -19,6 +19,8 @@ export const config = {
 // Rehearsal data never mixes with the real election-night database.
 if (config.simulate) config.dataDir = config.dataDir.replace(/\/$/, '') + '/sim';
 
+// The repo is public, so the default password is public too: never run production with it.
 if (config.isProd && config.controlPassword === 'changeme') {
-  console.warn('[config] CONTROL_PASSWORD is not set; using the default "changeme". Set it before going live.');
+  console.error('[config] Set CONTROL_PASSWORD (in .env) to something other than "changeme" before starting.');
+  process.exit(1);
 }
