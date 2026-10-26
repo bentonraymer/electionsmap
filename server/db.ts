@@ -5,7 +5,14 @@ import { DatabaseSync } from 'node:sqlite';
 import { config } from './config.js';
 
 mkdirSync(config.dataDir, { recursive: true });
-const db = new DatabaseSync(join(config.dataDir, 'electionsmap.db'));
+const dbPath = join(config.dataDir, 'electionsmap.db');
+let db: DatabaseSync;
+try {
+  db = new DatabaseSync(dbPath);
+} catch (e) {
+  console.error(`[db] Cannot open ${dbPath}: ${(e as Error).message}. Check that the data folder is writable (uid ${process.getuid?.()}).`);
+  process.exit(1);
+}
 db.exec('PRAGMA journal_mode = WAL');
 db.exec('CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value TEXT NOT NULL, updated_at INTEGER NOT NULL)');
 
