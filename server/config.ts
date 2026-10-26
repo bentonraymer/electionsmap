@@ -4,8 +4,8 @@ export const config = {
   port: Number(env.PORT ?? 8080),
   host: env.HOST ?? '0.0.0.0',
   dataDir: env.DATA_DIR ?? './data',
-  controlPassword: env.CONTROL_PASSWORD ?? 'changeme',
-  cookieSecret: env.COOKIE_SECRET ?? env.CONTROL_PASSWORD ?? 'electionsmap-dev-secret-change-me',
+  controlPassword: env.CONTROL_PASSWORD || 'changeme',
+  cookieSecret: env.COOKIE_SECRET || env.CONTROL_PASSWORD || 'electionsmap-dev-secret-change-me',
   displayToken: env.DISPLAY_TOKEN || undefined,
   civicBase: env.CIVICAPI_BASE ?? 'https://civicapi.org/api/v2',
   pollInterval: Number(env.POLL_INTERVAL ?? 30) * 1000, // national aggregates
