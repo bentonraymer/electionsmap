@@ -60,7 +60,8 @@
 .seg { display: inline-flex; border: 1px solid #c9d1e1; border-radius: 6px; overflow: hidden; }
 .seg button { border: 0; background: #fff; padding: 5px 10px; font: inherit; font-size: 12px; cursor: pointer; }
 .seg button.on { background: var(--navy); color: #fff; }
-.gfx-line { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.gfx-line { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 8px; }
+.gfx-line label { white-space: nowrap; }
 .gfx-line select { padding: 5px; border-radius: 6px; border: 1px solid #c9d1e1; font: inherit; }
 
 .detail .d-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }

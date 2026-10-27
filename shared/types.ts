@@ -82,7 +82,8 @@ export interface ShowState {
   gfx: {
     lowerThird: { on: boolean; raceId?: number };
     ticker: { on: boolean; set: BoardSet };
-    bop: { on: boolean; chamber: 'senate' | 'house' };
+    // alternate: cross-fade between Senate and House every `seconds`
+    bop: { on: boolean; chamber: 'senate' | 'house'; alternate?: boolean; seconds?: number };
   };
   banner: { alertId: string; until: number } | null; // alert currently on air
 }
@@ -127,7 +128,7 @@ export type Action =
   | { type: 'tv'; view?: TvView; raceId?: number; chamber?: Chamber; board?: BoardSet }
   | { type: 'lowerThird'; on: boolean; raceId?: number }
   | { type: 'ticker'; on: boolean; set?: BoardSet }
-  | { type: 'bopBug'; on: boolean; chamber?: 'senate' | 'house' }
+  | { type: 'bopBug'; on: boolean; chamber?: 'senate' | 'house'; alternate?: boolean; seconds?: number }
   | { type: 'clearGfx' }
   | { type: 'call'; raceId: number; candidateId: string }
   | { type: 'uncall'; raceId: number }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { PublicState } from '../../../shared/types';
 import { BOARD_LABEL, raceView } from '../derive';
-import { Banner, BopBug, LowerThird, Ticker } from './Gfx';
+import { Banner, BopBug, GfxLogo, LowerThird, Ticker } from './Gfx';
 import { Logo } from './Logo';
 import { MapLegend, StateMap, UsMap } from './Maps';
 import { Presence } from './Presence';
@@ -11,7 +11,7 @@ function Clock() {
   const [now, setNow] = useState(new Date());
   useEffect(() => { const t = setInterval(() => setNow(new Date()), 1000); return () => clearInterval(t); }, []);
   const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Chicago' });
-  return <div className="clock num">{time}<small>CT</small></div>;
+  return <div className="clock num">{time}</div>;
 }
 
 function activeAlert(s: PublicState) {
@@ -100,10 +100,11 @@ export function GfxScreen({ s }: { s: PublicState }) {
   const lt = raceView(s, gfx.lowerThird.raceId);
   return (
     <>
-      <Presence show={gfx.bop.on} k={gfx.bop.chamber}><BopBug b={s.bop[gfx.bop.chamber]} /></Presence>
-      <Presence show={!!alert} k={alert?.id}>{alert && <Banner a={alert} />}</Presence>
+      <Presence show={gfx.bop.on}><BopBug s={s} /></Presence>
       <Presence show={gfx.lowerThird.on && !!lt} k={gfx.lowerThird.raceId}>{lt && <LowerThird v={lt} />}</Presence>
       <Presence show={gfx.ticker.on} k={gfx.ticker.set}><Ticker s={s} set={gfx.ticker.set} /></Presence>
+      <Presence show={!!alert} k={alert?.id}>{alert && <Banner a={alert} />}</Presence>
+      <GfxLogo />
     </>
   );
 }

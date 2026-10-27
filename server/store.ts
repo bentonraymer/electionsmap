@@ -216,7 +216,12 @@ class Store {
         show.gfx.ticker = { on: a.on, set: a.set ?? show.gfx.ticker.set };
         break;
       case 'bopBug':
-        show.gfx.bop = { on: a.on, chamber: a.chamber ?? show.gfx.bop.chamber };
+        show.gfx.bop = {
+          on: a.on,
+          chamber: a.chamber ?? show.gfx.bop.chamber,
+          alternate: a.alternate ?? show.gfx.bop.alternate ?? false,
+          seconds: Math.min(120, Math.max(3, a.seconds ?? show.gfx.bop.seconds ?? 10)),
+        };
         break;
       case 'clearGfx':
         show.gfx.lowerThird.on = false;

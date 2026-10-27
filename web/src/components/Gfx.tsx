@@ -1,19 +1,23 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import type { Alert, BalanceOfPower, BoardSet, PublicState } from '../../../shared/types';
+import type { Alert, BalanceOfPower, BoardSet, PublicState, ShowState } from '../../../shared/types';
 import { PARTY_LABEL } from '../../../shared/types';
 import { BOARD_LABEL, boardRaces, lastName, raceView, type RaceView } from '../derive';
 import { pct } from '../live';
-import { brand, candidateColor, partyColor } from '../theme';
+import { candidateColor, partyColor } from '../theme';
 import { Logo } from './Logo';
 import { Shards } from './Presence';
+
+/** Permanent TUTV box at bottom left; the lower third and ticker sit beside it. */
+export function GfxLogo() {
+  return <div className="gfx-logo"><i className="drift" /><Logo /></div>;
+}
 
 /** Race lower third, built on the TUTV name-super geometry. */
 export function LowerThird({ v }: { v: RaceView }) {
   const cands = v.cands.slice(0, v.cands.length > 2 && v.cands[2].pct > 10 ? 3 : 2);
   return (
     <div className="lt">
-      <div className="lt-logo reveal"><Logo /></div>
-      <div className="lt-bar reveal" />
+      <div className="lt-bar reveal"><i className="sheen" /></div>
       <div className="lt-content fade">
         <div className="lt-race">
           <div className="t">{v.meta.title.replace(/^Oklahoma /, v.meta.state === 'ok' ? 'Oklahoma ' : '')}</div>
@@ -87,6 +91,7 @@ export function Ticker({ s, set }: { s: PublicState; set: BoardSet }) {
     <div className="ticker">
       <div className="tag reveal">{BOARD_LABEL[set].toUpperCase()}</div>
       <div className="lane reveal">
+        <i className="sheen" />
         <div className="crawl fade" ref={ref}>{items}{items.map((el, i) => <span key={'b' + i} style={{ display: 'contents' }}>{el}</span>)}</div>
         <Shards />
       </div>
@@ -94,11 +99,11 @@ export function Ticker({ s, set }: { s: PublicState; set: BoardSet }) {
   );
 }
 
-export function BopBug({ b }: { b: BalanceOfPower }) {
+function BopFace({ b, on }: { b: BalanceOfPower; on: boolean }) {
   const D = b.holdover.D + b.won.D;
   const R = b.holdover.R + b.won.R;
   return (
-    <div className="bug">
+    <div className={`bug-face ${on ? 'on' : ''}`}>
       <div className="bug-head reveal">{b.chamber === 'senate' ? 'U.S. SENATE' : 'U.S. HOUSE'}<span>{b.majority} TO WIN</span></div>
       <div className="bug-body reveal">
         <div className="bug-nums fade">
@@ -113,22 +118,48 @@ export function BopBug({ b }: { b: BalanceOfPower }) {
           <div className="mid" />
         </div>
       </div>
+    </div>
+  );
+}
+
+/** Which chamber the bug shows now; when alternating, every output flips on the same wall-clock beat. */
+function useBopChamber(cfg: ShowState['gfx']['bop']) {
+  const [now, setNow] = useState(Date.now());
+  useEffect(() => {
+    if (!cfg.alternate) return;
+    const t = setInterval(() => setNow(Date.now()), 250);
+    return () => clearInterval(t);
+  }, [cfg.alternate]);
+  if (!cfg.alternate) return cfg.chamber;
+  return Math.floor(now / ((cfg.seconds ?? 10) * 1000)) % 2 ? 'house' : 'senate';
+}
+
+export function BopBug({ s }: { s: PublicState }) {
+  const current = useBopChamber(s.show.gfx.bop);
+  return (
+    <div className="bug">
+      <BopFace b={s.bop.senate} on={current === 'senate'} />
+      <BopFace b={s.bop.house} on={current === 'house'} />
       <Shards />
     </div>
   );
 }
 
+/** Alert plate: lands on top of the lower-third slot in red so it reads as new. */
 export function Banner({ a }: { a: Alert }) {
-  const bg = a.kind === 'breaking' ? brand.navy : a.party ? partyColor[a.party] : brand.navy;
   const kindLabel = { call: 'RACE CALL', flip: 'SEAT FLIP', control: 'PROJECTION', breaking: 'BREAKING' }[a.kind];
   return (
     <div className="banner">
-      <div className="kind reveal" style={{ background: bg }}>
+      <div className="kind reveal">
         {a.kind === 'flip' ? a.title : kindLabel}
-        <small>TUTV ELECTION 2026</small>
+        <small>ELECTION 2026</small>
       </div>
       <div className="msg reveal">
-        <div className="h fade">{a.text}</div>
+        <i className="sheen" />
+        <div className="h fade">
+          {a.party && a.kind !== 'breaking' && <span className="chip" style={{ background: partyColor[a.party] }} />}
+          {a.text}
+        </div>
         {a.sub && <div className="s fade">{a.sub}</div>}
       </div>
       <Shards />

@@ -314,7 +314,10 @@ function GfxControls({ s, run, selected }: { s: PublicState; run: Run; selected?
       </div>
       <div className="gfx-line">
         <button className={`btn cue ${g.bop.on ? 'live' : ''}`} onClick={() => run({ type: 'bopBug', on: !g.bop.on })}>BoP bug</button>
-        <Seg value={g.bop.chamber} options={[['senate', 'Senate'], ['house', 'House']]} onPick={(c) => run({ type: 'bopBug', on: g.bop.on, chamber: c })} />
+        <Seg value={g.bop.alternate ? 'alt' : g.bop.chamber} options={[['senate', 'Senate'], ['house', 'House'], ['alt', 'Alternate']]}
+          onPick={(c) => run(c === 'alt' ? { type: 'bopBug', on: g.bop.on, alternate: true } : { type: 'bopBug', on: g.bop.on, chamber: c, alternate: false })} />
+        {g.bop.alternate && <label className="muted">every <input className="num-in" style={{ width: 56 }} type="number" min={3} max={120} value={g.bop.seconds ?? 10}
+          onChange={(e) => run({ type: 'bopBug', on: g.bop.on, seconds: Number(e.target.value) || 10 })} /> s</label>}
       </div>
     </section>
   );
