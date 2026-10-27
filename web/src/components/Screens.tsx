@@ -5,7 +5,7 @@ import { Banner, BopBug, GfxLogo, LowerThird, Ticker } from './Gfx';
 import { Logo } from './Logo';
 import { MapLegend, StateMap, UsMap } from './Maps';
 import { Presence } from './Presence';
-import { BigBoard, BopBar, RaceList, ResultsPanel, Reporting } from './Results';
+import { BigBoard, BopBar, CountyResults, RaceList, ResultsPanel, Reporting } from './Results';
 
 function Clock() {
   const [now, setNow] = useState(new Date());
@@ -38,6 +38,19 @@ export function TvScreen({ s }: { s: PublicState }) {
         <div style={{ position: 'absolute', left: 960, right: 70, top: 190 }}>
           <ResultsPanel v={v} />
           <div style={{ marginTop: 34 }}><Reporting v={v} /></div>
+        </div>
+      </div>
+    );
+  } else if (tv.view === 'county' && v) {
+    const picked = (tv.counties ?? []).map((k) => regions?.[k]).filter((r): r is NonNullable<typeof r> => !!r);
+    body = (
+      <div key={`county-${v.meta.id}-${(tv.counties ?? []).join()}`} style={{ position: 'absolute', inset: 0, animation: 'fade-in 0.5s both' }}>
+        <div className="tv-section-title"><b>{v.meta.title}</b><small>County results · Unofficial</small></div>
+        <div style={{ position: 'absolute', left: 50, top: 170, width: 860, height: 700 }}>
+          <StateMap view={v} regions={regions} width={860} height={700} highlight={tv.counties} />
+        </div>
+        <div style={{ position: 'absolute', left: 960, right: 70, top: 180 }}>
+          {picked.length ? <CountyResults v={v} regions={picked} /> : <div className="mini-head">Waiting for county results…</div>}
         </div>
       </div>
     );

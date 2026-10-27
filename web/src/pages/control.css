@@ -109,3 +109,35 @@
 @media (max-width: 1300px) {
   .desk { grid-template-columns: 300px 1fr 320px; }
 }
+
+/* ---- /control landing ---- */
+.landing { max-width: 760px; margin: 10vh auto; text-align: center; display: flex; flex-direction: column; gap: 18px; align-items: center; }
+.landing h1 { font-weight: 300; font-size: 26px; letter-spacing: 0.06em; color: var(--ink); margin: 0; }
+.landing-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%; }
+.landing-card { display: flex; flex-direction: column; gap: 8px; padding: 22px; background: #fff; border: 1px solid #d8dde8; border-radius: 10px; text-decoration: none; color: var(--ink); text-align: left; }
+.landing-card:hover { border-color: var(--navy); box-shadow: 0 4px 18px rgba(0, 53, 149, 0.12); }
+.landing-card b { font-size: 22px; color: var(--navy); }
+.landing-card span { color: #4a5875; line-height: 1.4; }
+
+/* ---- studio: county explorer ---- */
+.card h3 .cnt { font-size: 11px; letter-spacing: 0.02em; text-transform: none; margin-left: 6px; font-weight: 400; }
+.card h3 .h-btns { float: right; display: inline-flex; gap: 6px; align-items: center; text-transform: none; letter-spacing: 0; }
+.cty-explore { display: grid; grid-template-columns: 300px 1fr; gap: 14px; }
+.mini-map { background: linear-gradient(160deg, #003595, #001a4d); border-radius: 6px; padding: 0; }
+.picked { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; font-size: 12px; }
+.chip-btn { border: 1px solid var(--navy); background: #e3ebfc; color: var(--navy); border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer; }
+.cty-table { min-width: 0; display: flex; flex-direction: column; }
+.cty-table .filter { margin: 0 0 8px; }
+.cty-scroll { max-height: 420px; overflow: auto; border: 1px solid #edf0f6; border-radius: 6px; }
+.cty-scroll table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.cty-scroll th { position: sticky; top: 0; background: #f4f6fb; text-align: left; font-weight: 600; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: #4a5875; padding: 7px 8px; white-space: nowrap; }
+.cty-scroll th.sortable { cursor: pointer; user-select: none; }
+.cty-scroll th.on { color: var(--navy); }
+.cty-scroll td { padding: 5px 8px; border-top: 1px solid #edf0f6; white-space: nowrap; }
+.cty-scroll tr { cursor: pointer; }
+.cty-scroll tbody tr:hover { background: #f4f7fd; }
+.cty-scroll tr.on { background: #e3ebfc; }
+.cty-scroll .r { text-align: right; }
+.cty-scroll .b { font-weight: 700; }
+.cty-scroll .nm { font-weight: 500; }
+.preview .stage-wrap { display: block; }

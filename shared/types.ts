@@ -69,7 +69,7 @@ export interface Alert {
   createdAt: string;
 }
 
-export type TvView = 'national' | 'race' | 'board' | 'bop';
+export type TvView = 'national' | 'race' | 'board' | 'bop' | 'county';
 export type BoardSet = 'key' | 'ok' | 'watch' | 'senate' | 'governor';
 
 export interface ShowState {
@@ -78,6 +78,7 @@ export interface ShowState {
     raceId?: number;
     chamber: Chamber; // for national map + bop views
     board: BoardSet;
+    counties?: string[]; // region keys of raceId shown in the 'county' view
   };
   gfx: {
     lowerThird: { on: boolean; raceId?: number };
@@ -92,6 +93,7 @@ export interface Settings {
   autoAirAlerts: boolean;
   frozen: boolean;
   bannerSeconds: number;
+  hideJudges: boolean; // leave judicial retentions off the Oklahoma board + ticker
 }
 
 export interface FeedHealth {
@@ -125,7 +127,7 @@ export interface PublicState {
 }
 
 export type Action =
-  | { type: 'tv'; view?: TvView; raceId?: number; chamber?: Chamber; board?: BoardSet }
+  | { type: 'tv'; view?: TvView; raceId?: number; chamber?: Chamber; board?: BoardSet; counties?: string[] }
   | { type: 'lowerThird'; on: boolean; raceId?: number }
   | { type: 'ticker'; on: boolean; set?: BoardSet }
   | { type: 'bopBug'; on: boolean; chamber?: 'senate' | 'house'; alternate?: boolean; seconds?: number }

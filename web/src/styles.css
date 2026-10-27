@@ -102,13 +102,23 @@ body.control { background: #eef1f7; color: var(--ink); }
 .tile-head { display: flex; align-items: baseline; justify-content: space-between; padding: 12px 18px 8px; color: #fff; background: rgba(255, 255, 255, 0.08); border-top: 4px solid transparent; }
 .tile-head .t { font-size: 24px; font-weight: 600; letter-spacing: 0.04em; }
 .tile-head .r { font-size: 18px; font-weight: 300; letter-spacing: 0.06em; opacity: 0.85; }
-.tile-row { display: grid; grid-template-columns: 8px 1fr auto; align-items: center; height: 54px; padding-right: 16px; }
+/* rows share the plate's height evenly, so 2- and 3-candidate tiles both fill it */
+.tile-plate { flex: 1; display: flex; flex-direction: column; }
+.tile-row { flex: 1; display: grid; grid-template-columns: 8px 1fr auto; align-items: center; min-height: 0; padding-right: 16px; }
 .tile-row + .tile-row { border-top: 1px solid rgba(0, 0, 0, 0.06); }
 .tile-row .n { padding-left: 14px; font-size: 24px; font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tile-row .p { font-size: 30px; font-weight: 600; }
 .tile-row .ck { font-size: 22px; margin-right: 8px; }
 .board-page { position: absolute; right: 70px; top: 70px; color: rgba(255, 255, 255, 0.7); font-size: 22px; letter-spacing: 0.12em; }
 @keyframes tile-in { from { opacity: 0; transform: translateX(-30px); } }
+
+/* ---- county view ------------------------------------------------------------------ */
+.cty-title { color: #fff; font-size: 34px; font-weight: 600; letter-spacing: 0.04em; margin-bottom: 18px; }
+.cty-cards { display: flex; flex-direction: column; gap: 18px; }
+.cty-card { display: flex; flex-direction: column; height: 172px; }
+.cty-head { display: flex; align-items: baseline; justify-content: space-between; padding: 10px 18px 8px; color: #fff; background: rgba(255, 255, 255, 0.1); border-top: 4px solid var(--pastel-blue); }
+.cty-head .t { font-size: 26px; font-weight: 600; letter-spacing: 0.03em; }
+.cty-head .r { font-size: 18px; font-weight: 300; letter-spacing: 0.06em; opacity: 0.85; }
 
 /* ---- balance of power ------------------------------------------------------------- */
 .bop { color: #fff; }
@@ -140,30 +150,40 @@ body.control { background: #eef1f7; color: var(--ink); }
 .map path.state { stroke: rgba(255, 255, 255, 0.75); stroke-width: 1; transition: fill 0.6s; }
 .map path.county { stroke: rgba(255, 255, 255, 0.55); stroke-width: 0.6; transition: fill 0.6s; }
 .map path.outline { fill: none; stroke: #fff; stroke-width: 2.5; }
+.map path.county { transition: fill 0.6s, opacity 0.4s; }
+.map path.county.pickable { cursor: pointer; }
+.map path.county.pickable:hover { opacity: 0.8; }
+.map path.county-ring { fill: none; stroke: #fff; stroke-width: 3.5; pointer-events: none; }
+.map text.st.cty { font-size: 20px; stroke-width: 4px; }
 .map text.st { fill: #fff; font-size: 15px; font-weight: 600; text-anchor: middle; pointer-events: none; paint-order: stroke; stroke: rgba(0, 26, 77, 0.55); stroke-width: 3px; }
 .map-legend { display: flex; gap: 28px; color: #fff; font-size: 20px; font-weight: 300; letter-spacing: 0.06em; }
 .map-legend i { display: inline-block; width: 22px; height: 22px; vertical-align: -4px; margin-right: 8px; }
 
 /* ---- GFX: permanent logo box + lower third (TUTV name-super geometry) -------------- */
 /* Package: square logo box x130-245 beside the lower third (840-955, to x1790); ticker (975-1031) spans both, x130-1790. */
-.gfx-logo { position: absolute; left: 130px; top: 840px; width: 115px; height: 115px; background: linear-gradient(135deg, #fffde2 0%, #fff 45%, #fff 100%); border-right: 1px solid #b8b7b7; display: flex; align-items: center; justify-content: center; overflow: hidden; z-index: 3; }
-.gfx-logo .drift { position: absolute; left: -55px; top: -10px; width: 50px; height: 140px; background: rgba(190, 208, 253, 0.8); transform: skewX(-45deg); animation: logo-drift 9s ease-in-out infinite alternate; }
-.gfx-logo .drift::after { content: ''; position: absolute; left: 110px; top: 0; width: 26px; height: 100%; background: rgba(246, 198, 203, 0.7); }
+.gfx-logo { position: absolute; left: 130px; top: 840px; width: 115px; height: 115px; background: #fff; border-right: 1px solid #b8b7b7; display: flex; align-items: center; justify-content: center; overflow: hidden; z-index: 3; }
 .gfx-logo svg { position: relative; width: 92px; color: var(--navy); }
-@keyframes logo-drift { from { transform: skewX(-45deg) translateX(0); } to { transform: skewX(-45deg) translateX(40px); } }
 
 .lt { position: absolute; left: 245px; top: 840px; width: 1545px; height: 115px; }
 .lt-bar { position: absolute; inset: 0; overflow: hidden; background: linear-gradient(90deg, #f4f3f3 0%, #e8e8e8 30%, #d0cfcf 70%, rgba(184, 183, 183, 0.85) 92%); }
-.lt-bar::after { /* right-end 45° slash with the light-blue wedge */
-  content: ''; position: absolute; right: 0; top: 0; width: 140px; height: 100%;
-  background: linear-gradient(-45deg, var(--pastel-blue) 0 36%, transparent 36% 44%, rgba(184, 183, 183, 0.6) 44% 50%, transparent 50%);
-}
-/* slow light sweep across a plate */
-.sheen { position: absolute; top: 0; bottom: 0; left: 0; width: 260px; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent); transform: skewX(-45deg) translateX(-400px); animation: sheen 8s ease-in-out 1.5s infinite; }
-@keyframes sheen { 0% { transform: skewX(-45deg) translateX(-400px); } 35%, 100% { transform: skewX(-45deg) translateX(1900px); } }
+/* drifting stepped bands (see Bands in Gfx.tsx): soft trailing edge, hard leading edge, stair-step at lower left */
+.bands { --h: 115px; position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.bands.end { left: auto; width: 560px; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 60%); mask-image: linear-gradient(90deg, transparent 0, #000 60%); }
+.bands-strip { position: absolute; top: 0; bottom: 0; left: 0; width: 3000px; animation: bands-drift 34s linear infinite; }
+.bands i { position: absolute; top: 0; height: 100%; --c: var(--pastel-blue);
+  background: linear-gradient(90deg, transparent 0, var(--c) 45%, var(--c) 100%);
+  clip-path: polygon(calc(var(--h) + 18px) 0, 100% 0, calc(100% - var(--h) - 18px) 100%, 0 100%, 22px calc(100% - 22px), 40px calc(100% - 22px)); }
+.bands i.b { --c: rgba(190, 208, 253, 0.95); }
+.bands i.y { --c: rgba(250, 255, 193, 0.95); }
+.bands i.g { --c: rgba(200, 200, 200, 0.9); }
+.bands i.w { --c: rgba(255, 255, 255, 0.95); }
+.bands.on-red i.b, .bands.on-red i.w { --c: rgba(255, 255, 255, 0.28); }
+.bands.on-red i.y, .bands.on-red i.g { --c: rgba(246, 198, 203, 0.4); }
+@keyframes bands-drift { from { transform: translateX(-1000px); } to { transform: translateX(0); } }
 .lt-content { position: absolute; left: 34px; right: 150px; top: 0; height: 115px; display: flex; align-items: center; gap: 34px; color: var(--ink); }
-.lt-race { min-width: 270px; max-width: 360px; }
-.lt-race .t { font-size: 30px; font-weight: 600; line-height: 1.1; color: var(--navy); }
+.lt-race { flex: none; width: 470px; }
+.lt.three .lt-race { width: 380px; }
+.lt-race .t { font-size: 30px; font-weight: 600; line-height: 1.1; color: var(--navy); max-height: 2.2em; overflow: hidden; }
 .lt-race .s { font-size: 19px; font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 6px; color: #3a4a6b; }
 .lt-cands { flex: 1; display: flex; gap: 26px; min-width: 0; }
 .lt-cand { display: flex; align-items: center; gap: 14px; min-width: 0; }
@@ -207,7 +227,7 @@ body.control { background: #eef1f7; color: var(--ink); }
 .ticker { position: absolute; left: 130px; width: 1660px; top: 975px; height: 56px; display: flex; }
 .ticker .tag { flex: none; width: 200px; height: 100%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 600; letter-spacing: 0.14em; clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%); z-index: 1; }
 .ticker .lane { flex: 1; margin-left: -20px; overflow: hidden; background: linear-gradient(90deg, #f4f3f3, #dedddd); position: relative; }
-.ticker .lane .sheen { animation-duration: 11s; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent); }
+.ticker .lane .bands { --h: 56px; width: 420px; }
 .ticker .crawl { position: absolute; top: 0; height: 100%; display: flex; align-items: center; white-space: nowrap; will-change: transform; }
 .ticker .item { display: inline-flex; align-items: center; gap: 12px; padding: 0 30px 0 40px; font-size: 24px; color: var(--ink); }
 .ticker .item b { font-weight: 600; color: var(--navy); letter-spacing: 0.04em; }
@@ -237,11 +257,13 @@ body.control { background: #eef1f7; color: var(--ink); }
 .banner .msg .h .chip { flex: none; width: 10px; height: 44px; box-shadow: 0 0 0 2px #fff; }
 .banner .msg .s { position: relative; font-size: 21px; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; opacity: 0.92; }
 .banner .msg::after { content: ''; position: absolute; right: 0; top: 0; width: 140px; height: 100%; background: linear-gradient(-45deg, var(--pastel-red) 0 30%, transparent 30% 38%, rgba(255, 255, 255, 0.35) 38% 44%, transparent 44%); }
-.banner .msg .sheen { background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent); animation-duration: 5s; animation-delay: 0.8s; }
 .banner .shards i:nth-child(1), .banner .shards i:nth-child(4) { background: #f3a3ab; }
 .anim-in .banner .kind { animation: reveal-in 0.75s var(--ease) 0.15s both, pulse 1.2s ease 0.9s 3; }
 @keyframes pulse { 50% { filter: brightness(1.45); } }
-.tv-banner .banner { left: 70px; width: 1780px; top: 900px; }
+/* on /tv the alert takes over the header bar (above the tricolour stripe) so it never covers content */
+.tv-banner .banner { left: 0; width: 1920px; top: 0; height: 106px; z-index: 5; }
+.tv-banner .banner .kind { width: 360px; padding-left: 30px; }
+.tv-banner .banner .msg { padding-right: 160px; }
 
 /* ---- tv misc ---------------------------------------------------------------------------- */
 .offline { position: absolute; right: 24px; bottom: 18px; width: 14px; height: 14px; border-radius: 50%; background: #e0a100; box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3); z-index: 10; }

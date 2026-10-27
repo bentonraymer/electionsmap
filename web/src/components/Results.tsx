@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { BalanceOfPower, BoardSet, PublicState } from '../../../shared/types';
+import type { BalanceOfPower, BoardSet, PublicState, RegionResult } from '../../../shared/types';
 import { PARTY_LABEL } from '../../../shared/types';
 import { boardRaces, raceView, type RaceView } from '../derive';
 import { fmt, pct } from '../live';
@@ -41,6 +41,54 @@ export function ResultsPanel({ v, max = 4 }: { v: RaceView; max?: number }) {
   );
 }
 
+/** "Oklahoma" → "Oklahoma County" for on-air titles; leaves parishes, boroughs and cities alone. */
+const countyTitle = (name: string) => /county|parish|borough|city|census|municipality/i.test(name) ? name : `${name} County`;
+
+/** A county's results dressed as a RaceView (no call: winners are only called statewide). */
+export function countyView(v: RaceView, r: RegionResult): RaceView {
+  const cands = [...r.candidates].sort((a, b) => b.votes - a.votes).map((c) => {
+    const race = v.cands.find((x) => x.name === c.name);
+    return { id: c.name, name: c.name, party: c.party, partyName: race?.partyName ?? '', incumbent: race?.incumbent, votes: c.votes, pct: c.pct };
+  });
+  const totalVotes = cands.reduce((n, c) => n + c.votes, 0);
+  return { ...v, cands, leader: cands[0], called: undefined, flip: false, pctReporting: r.pctReporting, totalVotes, hasVotes: totalVotes > 0 };
+}
+
+/** Picked counties on /tv: one county gets full candidate plates, 2-4 get compact cards. */
+export function CountyResults({ v, regions }: { v: RaceView; regions: RegionResult[] }) {
+  if (regions.length === 1) {
+    const cv = countyView(v, regions[0]);
+    return (
+      <>
+        <div className="cty-title">{countyTitle(regions[0].name)}</div>
+        <ResultsPanel v={cv} max={4} />
+        <div style={{ marginTop: 30 }}><Reporting v={cv} /></div>
+      </>
+    );
+  }
+  return (
+    <div className="cty-cards">
+      {regions.map((r, i) => {
+        const cv = countyView(v, r);
+        return (
+          <div key={r.name} className="cty-card" style={{ animation: `fade-in 0.5s ${i * 0.08}s both` }}>
+            <div className="cty-head"><span className="t">{countyTitle(r.name)}</span><span className="r num">{r.pctReporting}% IN</span></div>
+            <div className="plate tile-plate">
+              {cv.cands.slice(0, 3).map((c, j) => (
+                <div key={c.id} className="tile-row">
+                  <div style={{ height: '100%', background: candidateColor(c.name, c.party) }} />
+                  <div className="n" style={{ fontWeight: j === 0 && cv.hasVotes ? 600 : 400 }}>{c.name}</div>
+                  <div className="p num">{cv.hasVotes ? `${pct(c.pct)}%` : ''}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export function Reporting({ v }: { v: RaceView }) {
   return (
     <div className="reporting">
@@ -62,7 +110,7 @@ function Tile({ v, delay }: { v: RaceView; delay: number }) {
           {v.called ? (v.flip ? `${PARTY_LABEL[v.called.party]} PICKUP` : 'CALLED') : v.hasVotes ? `${v.pctReporting}% IN` : 'NO RESULTS'}
         </span>
       </div>
-      <div className="plate" style={{ flex: 1 }}>
+      <div className="plate tile-plate">
         {rows.map((c) => {
           const won = v.called?.candidateId === c.id;
           return (

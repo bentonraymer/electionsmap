@@ -7,20 +7,53 @@ import { candidateColor, partyColor } from '../theme';
 import { Logo } from './Logo';
 import { Shards } from './Presence';
 
+// One period of the drifting 45° bands from the TUTV name super: [left px, width px, colour class].
+const BAND_PERIOD = 1000;
+const BANDS: [number, number, string][] = [
+  [0, 150, 'b'], [175, 110, 'y'], [330, 70, 'g'], [450, 170, 'w'], [660, 120, 'b'], [800, 90, 'y'], [920, 40, 'g'],
+];
+
+/** Slowly drifting stepped 45° bands (pastel blue / pale yellow / grey / white), as in the name-super package. */
+export function Bands({ className = '' }: { className?: string }) {
+  return (
+    <div className={`bands ${className}`}>
+      <div className="bands-strip">
+        {[0, 1, 2].flatMap((k) => BANDS.map(([x, w, c], i) => (
+          <i key={`${k}-${i}`} className={c} style={{ left: x + k * BAND_PERIOD, width: `calc(${w}px + var(--h) + 18px)` }} />
+        )))}
+      </div>
+    </div>
+  );
+}
+
 /** Permanent TUTV box at bottom left; the lower third and ticker sit beside it. */
 export function GfxLogo() {
-  return <div className="gfx-logo"><i className="drift" /><Logo /></div>;
+  return <div className="gfx-logo"><Bands /><Logo /></div>;
+}
+
+/** Shrinks text (down to `min` px) until it fits its box in at most `lines` lines. */
+function FitText({ text, max, min, lines, className }: { text: string; max: number; min: number; lines: number; className?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    for (let size = max; size >= min; size--) {
+      el.style.fontSize = `${size}px`;
+      if (el.scrollHeight <= size * 1.1 * lines + 1 && el.scrollWidth <= el.clientWidth) break;
+    }
+  }, [text, max, min, lines]);
+  return <div ref={ref} className={className}>{text}</div>;
 }
 
 /** Race lower third, built on the TUTV name-super geometry. */
 export function LowerThird({ v }: { v: RaceView }) {
   const cands = v.cands.slice(0, v.cands.length > 2 && v.cands[2].pct > 10 ? 3 : 2);
   return (
-    <div className="lt">
-      <div className="lt-bar reveal"><i className="sheen" /></div>
+    <div className={`lt ${cands.length > 2 ? 'three' : ''}`}>
+      <div className="lt-bar reveal"><Bands className="end" /></div>
       <div className="lt-content fade">
         <div className="lt-race">
-          <div className="t">{v.meta.title.replace(/^Oklahoma /, v.meta.state === 'ok' ? 'Oklahoma ' : '')}</div>
+          <FitText className="t" text={v.meta.title} max={30} min={19} lines={2} />
           <div className="s">{v.called ? (v.flip ? `${PARTY_LABEL[v.called.party]} pickup` : 'Projected winner') : v.hasVotes ? 'Unofficial results' : 'Awaiting results'}</div>
         </div>
         <div className="lt-cands">
@@ -91,7 +124,7 @@ export function Ticker({ s, set }: { s: PublicState; set: BoardSet }) {
     <div className="ticker">
       <div className="tag reveal">{BOARD_LABEL[set].toUpperCase()}</div>
       <div className="lane reveal">
-        <i className="sheen" />
+        <Bands className="end" />
         <div className="crawl fade" ref={ref}>{items}{items.map((el, i) => <span key={'b' + i} style={{ display: 'contents' }}>{el}</span>)}</div>
         <Shards />
       </div>
@@ -155,7 +188,7 @@ export function Banner({ a }: { a: Alert }) {
         <small>ELECTION 2026</small>
       </div>
       <div className="msg reveal">
-        <i className="sheen" />
+        <Bands className="end on-red" />
         <div className="h fade">
           {a.party && a.kind !== 'breaking' && <span className="chip" style={{ background: partyColor[a.party] }} />}
           {a.text}

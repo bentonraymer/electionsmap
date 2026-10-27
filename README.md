@@ -1,10 +1,12 @@
 # TUTV Election Night (electionsmap)
 
-Live election graphics for the 2026 midterms, driven from a laptop:
+Live election graphics for the 2026 midterms, driven from laptops in the studio and the booth (one shared password):
 
 | URL | Where it goes | What it is |
 | --- | --- | --- |
-| `/control` | Anchor/producer laptop | Password-protected control desk |
+| `/studio` | Analyst laptops | Results, county drill-down, race calls, overrides, what's on the TV |
+| `/booth` | Booth producer | GFX key layers, lower third, alert queue / breaking banners |
+| `/control` | Anyone | Landing page linking to Studio and Booth |
 | `/tv` | In-studio TV | Full-screen 1920×1080 maps, race results, big boards, balance of power |
 | `/gfx` | Switcher (browser source) | Transparent 1920×1080 key: lower third, ticker, BoP bug, alert banners |
 
@@ -17,9 +19,9 @@ Results come from [civicAPI](https://civicapi.org), which is free and needs no A
 - **Governors, Oklahoma races and starred races:** polled one at a time at `DETAIL_RPS` requests/second.
 - **The race on `/tv`:** refreshed every `ON_AIR_INTERVAL` seconds, with county results for the map.
 
-civicAPI is a free service with no uptime guarantee, so `/control` can **override** any race's votes or % reporting. **Freeze feed** holds the published numbers steady during a live hit. If the feed goes down, the displays keep showing the last good data.
+civicAPI is a free service with no uptime guarantee, so `/studio` can **override** any race's votes or % reporting. **Freeze feed** holds the published numbers steady during a live hit. If the feed goes down, the displays keep showing the last good data.
 
-**Race calls are manual.** A feed winner flag only appears as a hint in `/control`. When you call a race, the server queues an alert. A seat that changes party becomes a **PICKUP / seat-flip** alert, and a chamber crossing the majority line becomes a **control projection**. You choose when each alert airs, unless **Auto-air alerts** is on. The House tally counts feed winners automatically, because hand-calling 435 races isn't practical.
+**Race calls are manual.** A feed winner flag only appears as a hint in `/studio`. When you call a race, the server queues an alert. A seat that changes party becomes a **PICKUP / seat-flip** alert, and a chamber crossing the majority line becomes a **control projection**. The booth chooses when each alert airs, unless **Auto-air alerts** is on. The House tally counts feed winners automatically, because hand-calling 435 races isn't practical.
 
 The race catalog is `server/seed/races.json`. Rebuild it with `npm run seed`. Key races and the parties holding each seat going in are set at the top of `scripts/build-seed.ts`.
 
@@ -50,6 +52,11 @@ npm run build && npm start
 
 Pushes to `main` build a multi-arch image to `ghcr.io/bentonraymer/electionsmap` (see `.github/workflows/docker.yml`).
 
-## /control keyboard
+## Keyboard
 
-`↑/↓` select race · `Enter` take race to TV · `L` lower third · `T` ticker · `B` BoP bug · `Esc` clear all GFX
+- **Studio:** `↑/↓` select race · `Enter` race to TV
+- **Booth:** `↑/↓` select race · `Enter` lower third · `L` toggle lower third · `T` ticker · `B` BoP bug · `Esc` clear all GFX
+
+## County drill-down
+
+Select a race in `/studio` and the **Counties** card loads its county results (opening it moves the race to the front of the poll queue). Sort the table by any column, find counties by name, or click them on the map. Pick up to four, then **Show on TV** to put the state map, with those counties highlighted, and their results on `/tv`.

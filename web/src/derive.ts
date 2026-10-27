@@ -32,12 +32,13 @@ export function raceView(s: PublicState, id: number | undefined): RaceView | und
   };
 }
 
-export function boardRaces(s: PublicState, set: BoardSet): RaceMeta[] {
+/** Races on a board/ticker. `all` ignores on-air filters (the /control race list shows everything). */
+export function boardRaces(s: PublicState, set: BoardSet, all = false): RaceMeta[] {
   const order = (a: RaceMeta, b: RaceMeta) => catRank(a) - catRank(b) || (a.order ?? 0) - (b.order ?? 0) || a.title.localeCompare(b.title);
   let list: RaceMeta[];
   switch (set) {
     case 'key': list = s.races.filter((r) => r.key); break;
-    case 'ok': list = s.races.filter((r) => r.oklahoma); break;
+    case 'ok': list = s.races.filter((r) => r.oklahoma && (all || !s.settings.hideJudges || r.office !== 'Judicial Retention')); break;
     case 'watch': list = s.races.filter((r) => s.stars.includes(r.id)); break;
     case 'senate': list = s.races.filter((r) => r.category === 'senate'); break;
     case 'governor': list = s.races.filter((r) => r.category === 'governor'); break;

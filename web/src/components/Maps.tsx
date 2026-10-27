@@ -62,8 +62,14 @@ function stateProjection(state: string): GeoProjection {
   return geoMercator();
 }
 
-/** County results for one race; falls back to a state silhouette when the feed has no county FIPS. */
-export function StateMap({ view, regions, width, height }: { view: RaceView; regions?: Record<string, RegionResult>; width: number; height: number }) {
+/**
+ * County results for one race; falls back to a state silhouette when the feed has no county FIPS.
+ * `highlight` (region keys) dims every other county and labels the picked ones; `onPick` makes counties clickable.
+ */
+export function StateMap({ view, regions, width, height, highlight, onPick }: {
+  view: RaceView; regions?: Record<string, RegionResult>; width: number; height: number;
+  highlight?: string[]; onPick?: (key: string) => void;
+}) {
   const state = view.meta.state;
   const [counties, setCounties] = useState<FeatureCollection<Geometry, { name: string }> | null>(null);
   useEffect(() => { loadCounties().then(setCounties); }, []);
@@ -74,7 +80,14 @@ export function StateMap({ view, regions, width, height }: { view: RaceView; reg
   const path = geoPath(proj);
 
   const byFips = new Map<string, RegionResult>();
-  for (const r of Object.values(regions ?? {})) if (r.fips) byFips.set(r.fips.padStart(5, '0'), r);
+  const keyByFips = new Map<string, string>();
+  for (const [k, r] of Object.entries(regions ?? {})) {
+    if (!r.fips) continue;
+    byFips.set(r.fips.padStart(5, '0'), r);
+    keyByFips.set(r.fips.padStart(5, '0'), k);
+  }
+  const lit = new Set(highlight ?? []);
+  const dim = lit.size > 0;
   const prefix = STATE_FIPS[state];
   const stateCounties = counties?.features.filter((f) => String(f.id).startsWith(prefix)) ?? [];
   const matched = stateCounties.filter((f) => byFips.has(String(f.id))).length;
@@ -97,9 +110,26 @@ export function StateMap({ view, regions, width, height }: { view: RaceView; reg
     <div className="map">
       <svg width={width} height={height}>
         {useCounties
-          ? stateCounties.map((f) => <path key={String(f.id)} className="county" d={path(f) ?? ''} fill={regionFill(byFips.get(String(f.id)))} />)
+          ? stateCounties.map((f) => {
+            const key = keyByFips.get(String(f.id));
+            const on = !!key && lit.has(key);
+            return (
+              <path key={String(f.id)} className={`county ${on ? 'lit' : ''} ${onPick && key ? 'pickable' : ''}`} d={path(f) ?? ''}
+                fill={regionFill(byFips.get(String(f.id)))} opacity={dim && !on ? 0.3 : 1}
+                onClick={onPick && key ? () => onPick(key) : undefined}>
+                {onPick && <title>{byFips.get(String(f.id))?.name ?? f.properties.name}</title>}
+              </path>
+            );
+          })
           : <path className="state" d={path(outline) ?? ''} fill={stateFill} />}
         <path className="outline" d={path(outline) ?? ''} />
+        {useCounties && stateCounties.filter((f) => lit.has(keyByFips.get(String(f.id)) ?? '')).map((f) => (
+          <path key={'o' + f.id} className="county-ring" d={path(f) ?? ''} />
+        ))}
+        {useCounties && !onPick && stateCounties.filter((f) => lit.has(keyByFips.get(String(f.id)) ?? '')).map((f) => {
+          const [x, y] = path.centroid(f);
+          return isFinite(x) ? <text key={'t' + f.id} className="st cty" x={x} y={y + 6}>{byFips.get(String(f.id))?.name}</text> : null;
+        })}
       </svg>
     </div>
   );

@@ -26,7 +26,7 @@ const DEFAULT_SHOW: ShowState = {
   gfx: { lowerThird: { on: false }, ticker: { on: false, set: 'key' }, bop: { on: false, chamber: 'senate' } },
   banner: null,
 };
-const DEFAULT_SETTINGS: Settings = { autoAirAlerts: false, frozen: false, bannerSeconds: 12 };
+const DEFAULT_SETTINGS: Settings = { autoAirAlerts: false, frozen: false, bannerSeconds: 12, hideJudges: false };
 
 type Listener = () => void;
 
@@ -92,10 +92,23 @@ class Store {
     return [...ids];
   }
 
+  /** Races the studio is digging into (county explorer); polled like on-air races for a minute. */
+  private inspecting = new Map<number, number>();
+  inspect(id: number) { this.inspecting.set(id, Date.now()); }
+
   onAirRaceIds(): number[] {
     const ids = new Set<number>();
-    if (this.show.tv.view === 'race' && this.show.tv.raceId) ids.add(this.show.tv.raceId);
+    if ((this.show.tv.view === 'race' || this.show.tv.view === 'county') && this.show.tv.raceId) ids.add(this.show.tv.raceId);
     if (this.show.gfx.lowerThird.on && this.show.gfx.lowerThird.raceId) ids.add(this.show.gfx.lowerThird.raceId);
+    return [...ids];
+  }
+
+  /** On-air races plus anything inspected in the last minute: these jump the detail poll queue. */
+  priorityRaceIds(): number[] {
+    const ids = new Set(this.onAirRaceIds());
+    for (const [id, at] of this.inspecting) {
+      if (Date.now() - at < 60_000) ids.add(id); else this.inspecting.delete(id);
+    }
     return [...ids];
   }
 
@@ -207,6 +220,7 @@ class Store {
           ...show.tv,
           ...(a.view && { view: a.view }), ...(a.raceId && { raceId: a.raceId }),
           ...(a.chamber && { chamber: a.chamber }), ...(a.board && { board: a.board }),
+          ...(a.counties && { counties: a.counties.slice(0, 4) }),
         };
         break;
       case 'lowerThird':

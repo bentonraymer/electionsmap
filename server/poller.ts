@@ -31,7 +31,7 @@ export function startPoller(sink: Sink, opts: { once?: boolean } = {}) {
   async function detailTick() {
     // On-air races jump the queue so the race on /tv is never stale.
     const now = Date.now();
-    let id = store.onAirRaceIds().find((r) =>
+    let id = store.priorityRaceIds().find((r) =>
       opts.once ? !fetchedOnce.has(r) : now - (lastOnAir.get(r) ?? 0) > config.onAirInterval);
     if (id) lastOnAir.set(id, now);
     else {

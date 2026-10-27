@@ -6,7 +6,9 @@ import { createRoot } from 'react-dom/client';
 import { GfxScreen, TvScreen } from './components/Screens';
 import { Stage } from './components/Stage';
 import { useLiveState } from './live';
+import { Booth } from './pages/Booth';
 import { Control } from './pages/Control';
+import { Studio } from './pages/Studio';
 import './styles.css';
 
 function Output({ kind }: { kind: 'tv' | 'gfx' }) {
@@ -20,10 +22,13 @@ function Output({ kind }: { kind: 'tv' | 'gfx' }) {
   );
 }
 
+const PAGES = { tv: 'TUTV TV', gfx: 'TUTV GFX', studio: 'TUTV Studio', booth: 'TUTV Booth', control: 'TUTV Election Night' } as const;
+type Page = keyof typeof PAGES;
 const path = location.pathname.replace(/\/+$/, '') || '/';
-const page = path === '/tv' ? 'tv' : path === '/gfx' ? 'gfx' : 'control';
-document.body.className = page;
-document.title = page === 'control' ? 'TUTV Election Control' : `TUTV ${page.toUpperCase()}`;
+const page: Page = (path.slice(1) in PAGES ? path.slice(1) : 'control') as Page;
+document.body.className = page === 'tv' || page === 'gfx' ? page : 'control';
+document.title = PAGES[page];
 if (page === 'control' && path !== '/control') history.replaceState(null, '', '/control');
 
-createRoot(document.getElementById('root')!).render(page === 'control' ? <Control /> : <Output kind={page} />);
+const root = { tv: <Output kind="tv" />, gfx: <Output kind="gfx" />, studio: <Studio />, booth: <Booth />, control: <Control /> }[page];
+createRoot(document.getElementById('root')!).render(root);

@@ -63,6 +63,15 @@ app.post<{ Body: Action }>('/api/action', async (req, reply) => {
   }
 });
 
+// County-level results for any tracked race (the studio's county explorer). Asking also bumps it up the poll queue.
+app.get<{ Params: { id: string } }>('/api/regions/:id', async (req, reply) => {
+  if (!authed(req)) return reply.code(401).send({ error: 'Not logged in' });
+  const id = Number(req.params.id);
+  store.inspect(id);
+  const r = store.result(id, true);
+  return { regions: r?.regions ?? {}, lastUpdated: r?.lastUpdated };
+});
+
 app.get<{ Querystring: { q?: string } }>('/api/search', async (req, reply) => {
   if (!authed(req)) return reply.code(401).send({ error: 'Not logged in' });
   const q = (req.query.q ?? '').trim();
@@ -107,7 +116,7 @@ app.get<{ Querystring: { token?: string } }>('/ws', { websocket: true }, (socket
 const webRoot = fileURLToPath(new URL('../web/', import.meta.url));
 if (import.meta.url.includes('/dist/server/') && existsSync(webRoot)) {
   await app.register(fastifyStatic, { root: webRoot, wildcard: false, index: false });
-  for (const route of ['/', '/control', '/tv', '/gfx']) {
+  for (const route of ['/', '/control', '/studio', '/booth', '/tv', '/gfx']) {
     app.get(route, (_req, reply) => reply.sendFile('index.html'));
   }
 }
