@@ -145,14 +145,14 @@ body.control { background: #eef1f7; color: var(--ink); }
 .map-legend i { display: inline-block; width: 22px; height: 22px; vertical-align: -4px; margin-right: 8px; }
 
 /* ---- GFX: permanent logo box + lower third (TUTV name-super geometry) -------------- */
-/* Package: logo box x130-280 spanning both rows; lower third (840-955) and ticker (975-1031) share x280-1790. */
-.gfx-logo { position: absolute; left: 130px; top: 840px; width: 150px; height: 191px; background: linear-gradient(135deg, #fffde2 0%, #fff 45%, #fff 100%); border-right: 1px solid #b8b7b7; display: flex; align-items: center; justify-content: center; overflow: hidden; z-index: 3; }
-.gfx-logo .drift { position: absolute; left: -60px; top: -20px; width: 70px; height: 240px; background: rgba(190, 208, 253, 0.8); transform: skewX(-45deg); animation: logo-drift 9s ease-in-out infinite alternate; }
-.gfx-logo .drift::after { content: ''; position: absolute; left: 150px; top: 0; width: 26px; height: 100%; background: rgba(246, 198, 203, 0.7); }
-.gfx-logo svg { position: relative; width: 118px; color: var(--navy); }
-@keyframes logo-drift { from { transform: skewX(-45deg) translateX(0); } to { transform: skewX(-45deg) translateX(60px); } }
+/* Package: square logo box x130-245 beside the lower third (840-955, to x1790); ticker (975-1031) spans both, x130-1790. */
+.gfx-logo { position: absolute; left: 130px; top: 840px; width: 115px; height: 115px; background: linear-gradient(135deg, #fffde2 0%, #fff 45%, #fff 100%); border-right: 1px solid #b8b7b7; display: flex; align-items: center; justify-content: center; overflow: hidden; z-index: 3; }
+.gfx-logo .drift { position: absolute; left: -55px; top: -10px; width: 50px; height: 140px; background: rgba(190, 208, 253, 0.8); transform: skewX(-45deg); animation: logo-drift 9s ease-in-out infinite alternate; }
+.gfx-logo .drift::after { content: ''; position: absolute; left: 110px; top: 0; width: 26px; height: 100%; background: rgba(246, 198, 203, 0.7); }
+.gfx-logo svg { position: relative; width: 92px; color: var(--navy); }
+@keyframes logo-drift { from { transform: skewX(-45deg) translateX(0); } to { transform: skewX(-45deg) translateX(40px); } }
 
-.lt { position: absolute; left: 280px; top: 840px; width: 1510px; height: 115px; }
+.lt { position: absolute; left: 245px; top: 840px; width: 1545px; height: 115px; }
 .lt-bar { position: absolute; inset: 0; overflow: hidden; background: linear-gradient(90deg, #f4f3f3 0%, #e8e8e8 30%, #d0cfcf 70%, rgba(184, 183, 183, 0.85) 92%); }
 .lt-bar::after { /* right-end 45° slash with the light-blue wedge */
   content: ''; position: absolute; right: 0; top: 0; width: 140px; height: 100%;
@@ -204,7 +204,7 @@ body.control { background: #eef1f7; color: var(--ink); }
 @keyframes fade-out { to { opacity: 0; } }
 
 /* ---- GFX: ticker -------------------------------------------------------------------- */
-.ticker { position: absolute; left: 280px; width: 1510px; top: 975px; height: 56px; display: flex; }
+.ticker { position: absolute; left: 130px; width: 1660px; top: 975px; height: 56px; display: flex; }
 .ticker .tag { flex: none; width: 200px; height: 100%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 600; letter-spacing: 0.14em; clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%); z-index: 1; }
 .ticker .lane { flex: 1; margin-left: -20px; overflow: hidden; background: linear-gradient(90deg, #f4f3f3, #dedddd); position: relative; }
 .ticker .lane .sheen { animation-duration: 11s; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent); }
@@ -229,7 +229,7 @@ body.control { background: #eef1f7; color: var(--ink); }
 .bug-track .mid { position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; background: var(--ink); }
 
 /* ---- alert banner: layered on the lower-third slot in red (gfx), bottom of screen (tv) ---- */
-.banner { position: absolute; left: 280px; top: 840px; width: 1510px; height: 115px; display: flex; z-index: 2; }
+.banner { position: absolute; left: 245px; top: 840px; width: 1545px; height: 115px; display: flex; z-index: 2; }
 .banner .kind { flex: none; width: 280px; height: 100%; color: #fff; background: #8f0d1d; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 30px; font-weight: 600; letter-spacing: 0.1em; clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0 100%); z-index: 1; position: relative; overflow: hidden; }
 .banner .kind small { font-size: 15px; font-weight: 300; letter-spacing: 0.24em; margin-top: 6px; opacity: 0.9; }
 .banner .msg { flex: 1; margin-left: -30px; padding-left: 64px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(90deg, #d11f33 0%, #c4182b 55%, #a51326 100%); color: #fff; position: relative; overflow: hidden; }
