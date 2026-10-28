@@ -190,7 +190,6 @@ export function Banner({ a }: { a: Alert }) {
       <div className="msg reveal">
         <Bands className="end on-red" />
         <div className="h fade">
-          {a.party && a.kind !== 'breaking' && <span className="chip" style={{ background: partyColor[a.party] }} />}
           {a.text}
         </div>
         {a.sub && <div className="s fade">{a.sub}</div>}

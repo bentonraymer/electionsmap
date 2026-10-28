@@ -254,7 +254,6 @@ body.control { background: #eef1f7; color: var(--ink); }
 .banner .kind small { font-size: 15px; font-weight: 300; letter-spacing: 0.24em; margin-top: 6px; opacity: 0.9; }
 .banner .msg { flex: 1; margin-left: -30px; padding-left: 64px; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(90deg, #d11f33 0%, #c4182b 55%, #a51326 100%); color: #fff; position: relative; overflow: hidden; }
 .banner .msg .h { position: relative; font-size: 44px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 18px; }
-.banner .msg .h .chip { flex: none; width: 10px; height: 44px; box-shadow: 0 0 0 2px #fff; }
 .banner .msg .s { position: relative; font-size: 21px; font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; opacity: 0.92; }
 .banner .msg::after { content: ''; position: absolute; right: 0; top: 0; width: 140px; height: 100%; background: linear-gradient(-45deg, var(--pastel-red) 0 30%, transparent 30% 38%, rgba(255, 255, 255, 0.35) 38% 44%, transparent 44%); }
 .banner .shards i:nth-child(1), .banner .shards i:nth-child(4) { background: #f3a3ab; }
